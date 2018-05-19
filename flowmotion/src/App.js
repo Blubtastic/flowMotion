@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from './components/Home';
 
-//Router for the nav, with a burger menu for mobile devices.
+//Router for the nav, with a burger menu for mobile devices. 
 class App extends Component {
   render() {
     return (

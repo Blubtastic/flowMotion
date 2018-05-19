@@ -4,7 +4,7 @@ import Button from '../Button'
 
 const Cover = ({ image, height }) => {
   const photo = require('../../images/' + image);
-  //Inline html style in order to use parameters. The rest of the styling is in the css file.
+  //Inline html style in order to use parameters for changing some CSS
   var divStyle = {
     height: height,
     backgroundImage: "url(" + photo + ")",
