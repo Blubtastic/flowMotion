@@ -1,10 +1,15 @@
+.slideshow-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .slide-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 600px;
+  height: 400px;
+  width: 1200px;
   max-width: 100%; }
 
 .slide img {
@@ -15,25 +20,25 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  left: 40%;
+  left: 0%;
   width: 20%;
   z-index: 1;
-  transition: width 1s, height 1s, left 1s, visibility 1s, opacity 1s; }
+  transition: width 0.5s, height 0.5s, left 0.5s, visibility 0.5s, opacity 0.5s; }
 
 .image3 {
   position: absolute;
-  left: 60%;
+  left: 70%;
   width: 20%;
   z-index: 1; }
 
 .image0 {
-  width: 30%;
+  width: 40%;
   visibility: visible;
   opacity: 1;
   position: absolute;
   left: 0;
   z-index: 2;
-  transition: width 1s, height 1s, left 1s, visibility 1s, opacity 1s; }
+  transition: width 0.5s, height 0.5s, left 0.5s, visibility 0.5s, opacity 0.5s; }
 
 .image1 {
   width: 50%;
@@ -42,13 +47,23 @@
   position: absolute;
   left: 25%;
   z-index: 3;
-  transition: width 1s, height 1s, left 1s, visibility 1s, opacity 1s; }
+  transition: width 0.5s, height 0.5s, left 0.5s, visibility 0.5s, opacity 0.5s; }
 
 .image2 {
-  width: 30%;
+  width: 40%;
   visibility: visible;
   opacity: 1;
   position: absolute;
-  left: 70%;
+  left: 60%;
   z-index: 2;
-  transition: width 1s, height 1s, left 1s, visibility 1s, opacity 1s; }
+  transition: width 0.5s, height 0.5s, left 0.5s, visibility 0.5s, opacity 0.5s; }
+
+.circle1{
+  stroke: #ee1b2c;
+  stroke-width: 2;
+  stroke: #999;
+}
+.circle1 + svg circle{
+  fill: #ee1b2c;
+  stroke-width: 0;
+}

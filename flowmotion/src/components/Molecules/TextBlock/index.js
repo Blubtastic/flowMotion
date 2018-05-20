@@ -5,7 +5,6 @@ const Cover = ({ title, p1, p2 }) => {
       <div>
         <h2>{title}</h2>
         <p>{p1}</p>
-        <br/>
         <p>{p2}</p>
       </div>
   )
