@@ -1,10 +1,27 @@
 import React, {Component} from 'react'
 import Cover from '../Cover';
-import Button from '../Button'
-import CoreValues from '../CoreValues'
+import Button from '../Molecules/Button';
+import TextBlock from '../Molecules/TextBlock';
+import CoreValues from '../CoreValues';
+import Slideshow from '../Slideshow';
+
 
 //Homepage content. Everything except the navbar
 export default class Home extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      about: ["About us",
+      "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
+      "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"],
+      ourPeople: ["Our People",
+      "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
+      "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"],
+      slideshowImages: [],
+    }
+
+  }
   render() {
     return(
       <div className="page">
@@ -15,15 +32,7 @@ export default class Home extends Component {
 
         <div className="container">
           <div className="paragraph">
-            <h2>About us</h2>
-            <p>"We've come a long way since our first prototype in April 2015. \
-             Our community continues to grow and we are looking forward to \
-             adventurous and passionate people to join our journey."</p>
-            <br/>
-            <p>"We are now one of the top 150 most-fnuded Kickstarter campaigns \
-             with a passionate community of over 7,000 people. We're on a \
-             mission to put an end to shaky videos world wide. And we have the \
-             ultimate tool to do it. We hope so you can be a part of this mission!"</p>
+            <TextBlock title={this.state.about[0]} p1={this.state.about[1]} p2={this.state.about[2]} />
           </div>
         </div>
 
@@ -33,6 +42,16 @@ export default class Home extends Component {
 
         <div className="container black centerAlign textAlign">
           <CoreValues/>
+        </div>
+
+        <div className="container">
+          <div className="paragraph">
+            <TextBlock title={this.state.ourPeople[0]} p1={this.state.ourPeople[1]} p2={this.state.ourPeople[2]} />
+          </div>
+        </div>
+
+        <div className="container centerAlign">
+          <Slideshow/>
         </div>
 
       </div>
