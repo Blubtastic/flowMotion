@@ -1,16 +1,18 @@
 .cover-img{
-  position: relative;
-  top: -300px;
   z-index: -1;
-  background-size: cover;
-  background-position: center;
+  background-size: cover 100%;
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 480px)   {
   .cover-img{
-      background-size: cover 100%;
-      top: 0px;
+      background-size: cover;
+      background-position: center 0px !important;
       height: 600px !important;
+  }
+}
+@media only screen and (min-width: 1920px)   {
+  .cover-img{
+    background-size: 100%;
   }
 }
 
@@ -24,7 +26,6 @@
 }
 .shaded h1{
   position: relative;
-  top: 150px;
   text-align: center;
   z-index: 10;
   color: #fff;
@@ -34,7 +35,7 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  bottom: 30px;
+
   left: 0px;
   right: 0px;
   margin: auto;
@@ -42,5 +43,5 @@
   max-width: 100%;
 }
 .corner-button div{
-  margin-right: 25px;
+  margin-right: 15px;
 }
