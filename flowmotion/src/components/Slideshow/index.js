@@ -35,10 +35,10 @@ export default class Slideshow extends Component {
   //RENDER
   render() {
     return(
-      <div>
-        <div className="slideshow-container">
+      <div className="maxWidth">
+        <div className="slideshowContainer">
           <button onClick={this.previousSlide}>Prev</button>
-          <div className="slide-container">
+          <div className="slideContainer">
             {this.generateSlides()}
           </div>
           <button onClick={this.nextSlide}>Next</button>
@@ -47,7 +47,7 @@ export default class Slideshow extends Component {
         <div className="centerAlign">
         {this.generateCircles()}
         </div>
-        <div className="textAlign ">
+        <div className="textAlign narrowContainer sidePadding">
           <h2>{this.state.names[this.state.currentIndex]}</h2>
           <p>{this.state.descriptions[this.state.currentIndex]}</p>
         </div>

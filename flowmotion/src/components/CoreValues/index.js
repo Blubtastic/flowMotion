@@ -10,7 +10,7 @@ export default class CoreValues extends Component {
   }
   render() {
     return(
-        <div className="whiteText coverWidth">
+        <div className="whiteText coverWidth maxWidth">
           <h2>Core Values</h2>
           <div className="coreIcons narrowContainer">
             <div onClick={() => this.updateIndex(0)} ></div>

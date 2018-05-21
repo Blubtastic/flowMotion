@@ -19,7 +19,7 @@
 .shaded{
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,17 +31,29 @@
   color: #fff;
 }
 
-.corner-button{
+.cornerButton{
   display: flex;
   justify-content: flex-end;
   position: absolute;
-
   left: 0px;
   right: 0px;
+  top: 540px;
   margin: auto;
   width: 1600px;
   max-width: 100%;
 }
-.corner-button div{
+@media only screen and (max-width: 480px){
+  .cornerButton{
+      top: 500px;
+
+  }
+  .cornerButton div{
+    width: 230px;
+    height: 55px;
+    margin-right: 30px !important;
+    font-size: 95%;
+  }
+}
+.cornerButton div{
   margin-right: 15px;
 }

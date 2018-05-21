@@ -1,14 +1,15 @@
-.slideshow-container{
+.slideshowContainer{
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.slide-container {
+  max-width: 100%;}
+
+.slideContainer {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 250px;
   width: 1200px;
   max-width: 100%; }
 
@@ -61,9 +62,8 @@
 .circle1{
   stroke: #ee1b2c;
   stroke-width: 2;
-  stroke: #999;
-}
+  stroke: #999; }
+
 .circle1 + svg circle{
   fill: #ee1b2c;
-  stroke-width: 0;
-}
+  stroke-width: 0; }
