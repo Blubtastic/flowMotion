@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route, Link, HashRouter} from 'react-router-dom';
+import {Route, HashRouter} from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav'
 

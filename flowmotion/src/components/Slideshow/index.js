@@ -61,7 +61,7 @@ export default class Slideshow extends Component {
   generateSlides(){
     let children = [];
     for (let x = 0; x < this.state.images.length; x++){
-      children.push(<div className={'hidden image' + this.state.indexes[x]}  onClick={() => this.changeSlide(x)}>  <Slide image={this.state.images[x]}/>  </div>)
+      children.push(<div className={'hidden image' + this.state.indexes[x]} key={x} onClick={() => this.changeSlide(x)}>  <Slide image={this.state.images[x]} />  </div>)
     }
     return children;
   }
@@ -70,7 +70,7 @@ export default class Slideshow extends Component {
     let children = [];
     for (let x = 0; x < this.state.images.length; x++){
       children.push(
-        <svg height="30" width="30" >
+        <svg height="30" width="30" key={x} >
           <circle cx="15" cy="15" r="10" fill="none" className={'circle' + this.state.indexes[x]}/>
           <svg height="30" width="30" >
             <circle cx="15" cy="15" r="6" fill="none" stroke="#bbb" strokeWidth="2" />

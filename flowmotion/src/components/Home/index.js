@@ -77,12 +77,12 @@ export default class Home extends Component {
         {/* Instagram section */}
         <div className="container centerAlign column">
           <h2>Instagram</h2>
-          <div className="row flexWrap centerAlign">
-            <div className="row smallSidePadding">
+          <div className="row flexWrap centerAlign smallSidePadding maxWidth">
+            <div className="row maxWidth test">
               <InstaImage image={"insta.jpg"}/>
               <InstaImage image={"insta.jpg"}/>
             </div>
-            <div className="row smallSidePadding">
+            <div className="row maxWidth test">
               <InstaImage image={"insta.jpg"}/>
               <InstaImage image={"insta.jpg"}/>
             </div>
