@@ -97,7 +97,12 @@ h4{
   justify-content: flex-start !important;
 }
 .padding{
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.smallPadding{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .sidePadding{
   padding-left: 35px;
@@ -124,7 +129,12 @@ h4{
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
+}
+/* Specific value needed to center cards on smaller screens  */
+@media only screen and (max-width: 916px)   {
+  .positionCards{
+    justify-content: center !important;
+  }
 }
 
 
@@ -188,4 +198,8 @@ h4{
 .instaImage:hover img {
   z-index: -1;
   filter: grayscale(100%);
+}
+.benefits div{
+  display: flex;
+  justify-content: space-between;
 }

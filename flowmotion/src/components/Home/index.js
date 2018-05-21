@@ -7,6 +7,7 @@ import Button from '../Molecules/Button';
 import TextBlock from '../Molecules/TextBlock';
 import Position from '../Molecules/Position'
 import InstaImage from '../Molecules/InstaImage'
+import TextIcon from '../Molecules/TextIcon';
 
 //Homepage content. Everything except the navbar
 export default class Home extends Component {
@@ -20,6 +21,7 @@ export default class Home extends Component {
       ourPeople: ["Our People",
       "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
       "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"],
+      benefits: ["Benefits", "We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in. ", "/"],
       slideshowImages: [],
 
       position1: ["VP of Sales", "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ", "/"],
@@ -62,6 +64,25 @@ export default class Home extends Component {
         </div>
         <div className="container centerAlign">
           <Slideshow/>
+        </div>
+
+        {/* Benefits section */}
+        <div className="container black whiteText">
+          <div className="paragraph wideContainer sidePadding ">
+            <TextBlock title={this.state.benefits[0]} p1={this.state.benefits[1]} />
+            <div className="benefits wideContainer">
+              <div className="row padding">
+                <TextIcon image={"instagram.png"} word={"Benefit 1"} />
+                <TextIcon image={"instagram.png"} word={"Benefit 2"} />
+                <TextIcon image={"instagram.png"} word={"Benefit 3"} />
+              </div>
+              <div className="row">
+                <TextIcon image={"instagram.png"} word={"Benefit 4"} />
+                <TextIcon image={"instagram.png"} word={"Benefit 5"} />
+                <TextIcon image={"instagram.png"} word={"Benefit 6"} />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Open Positions section */}
