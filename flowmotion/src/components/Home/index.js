@@ -92,13 +92,14 @@ export default class Home extends Component {
         </div>
 
         {/* Slideshow section */}
-        <div className="container">
+        <div className="container column">
           <div className="paragraph wideContainer sidePadding">
             <TextBlock title={this.state.ourPeople[0]} p1={this.state.ourPeople[1]} p2={this.state.ourPeople[2]} />
           </div>
-        </div>
-        <div className="container centerAlign">
-          <Slideshow/>
+
+          <div className="centerAlign">
+            <Slideshow/>
+          </div>
         </div>
 
         {/* Benefits section */}
