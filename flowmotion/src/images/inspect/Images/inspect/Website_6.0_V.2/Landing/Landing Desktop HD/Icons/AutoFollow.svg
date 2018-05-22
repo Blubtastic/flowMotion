@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>2379FCFE-EC1C-4ECF-B735-36B445AA5963</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30"></rect>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop-HD" transform="translate(-965.000000, -3611.000000)">
+            <g id="05-Features" transform="translate(0.000000, 3095.000000)">
+                <g id="Icons" transform="translate(883.000000, 334.000000)">
+                    <g id="Autofollow" transform="translate(0.000000, 182.000000)">
+                        <g id="Icons/AutoFollow-Light" transform="translate(82.000000, 0.000000)">
+                            <g id="icon-autofollow-48-copy" transform="translate(-1.000000, -1.000000)">
+                                <rect id="Rectangle-path" x="0" y="0" width="48" height="48"></rect>
+                                <g id="Group" transform="translate(9.000000, 7.000000)">
+                                    <g id="Clipped">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="a"></g>
+                                        <path d="M21.5,10.793 C21.5,14.383 18.59,17.293 15,17.293 C11.41,17.293 8.5,14.383 8.5,10.793 C8.5,7.203 11.41,4.293 15,4.293 C18.59,4.293 21.5,7.203 21.5,10.793 Z M21.017,18.5518 C19.353,19.8438 17.269,20.6198 15.001,20.6198 C12.731,20.6198 10.647,19.8438 8.983,18.5518 L8.001,18.5518 C3.581,18.5518 0.001,22.1338 0.001,26.5518 L0.001,28.9318 C0.001,29.4838 0.447,29.9318 1.001,29.9318 L29.001,29.9318 C29.553,29.9318 30.001,29.4838 30.001,28.9318 L30.001,26.5518 C30.001,22.1338 26.419,18.5518 22.001,18.5518 L21.017,18.5518 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                                    </g>
+                                </g>
+                                <path d="M2,15.3913043 L2,5.82608696 C2,3.71299748 3.71299748,2 5.82608696,2 L15.3913043,2 M2,32.6086957 L2,42.173913 C2,44.2870025 3.71299748,46 5.82608696,46 L15.3913043,46 M46,15.3913043 L46,5.82608696 C46,3.71299748 44.2870025,2 42.173913,2 L32.6086957,2 M46,32.6086957 L46,42.173913 C46,44.2870025 44.2870025,46 42.173913,46 L32.6086957,46" id="Shape" stroke="#FFFFFF" stroke-width="1.913" stroke-linecap="round"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="48px" viewBox="0 0 62 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>006303EC-F0C0-429E-BEAC-C0341C233E0E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop-HD" transform="translate(-136.000000, -12649.000000)">
+            <g id="02-Icons" transform="translate(135.000000, 12641.000000)">
+                <g id="Shipping">
+                    <g id="Icons/Delivery-Dark">
+                        <g id="icon-delivery-48">
+                            <rect id="Rectangle-path" x="0" y="0" width="64" height="64"></rect>
+                            <g id="Group" transform="translate(2.666667, 9.333333)" stroke="#000000">
+                                <polyline id="Shape" stroke-width="1.5" points="37.3333333 9.33333333 53.3333333 9.33333333 58.6666667 25.3333333 58.6666667 37.3333333 51.8666667 37.3333333"></polyline>
+                                <path d="M38.8,37.3333333 L21.3026667,37.3333333" id="Shape"></path>
+                                <polyline id="Shape" stroke-width="1.5" points="6.66666667 37.3333333 0 37.3333333 0 0 37.3333333 0 37.3333333 26.6666667"></polyline>
+                                <circle id="Oval" stroke-width="1.5" stroke-linecap="square" cx="14" cy="38" r="7.33333333"></circle>
+                                <circle id="Oval" stroke-width="1.5" stroke-linecap="square" cx="45.3333333" cy="38.6666667" r="6.66666667"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -30,6 +30,9 @@
   }
 }
 
+.footer img{
+  width: 100px;
+}
 .footer div{
   flex-grow: 1;
   flex-wrap: wrap;

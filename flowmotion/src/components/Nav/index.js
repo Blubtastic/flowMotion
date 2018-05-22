@@ -1,13 +1,15 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom';
+import flowmotion from '../../images/flowmotion.svg';
+import flowmotionSmall from '../../images/flowmotion.svg';
 import './nav.css'
 
 export default class Slideshow extends Component {
   constructor(props){
     super(props);
     this.state = {
-        checkboxState: false,
-      }
+      checkboxState: false,
+    }
   }
 
   render(){
@@ -20,13 +22,13 @@ export default class Slideshow extends Component {
               <span></span>
               <span></span>
             </div>
-            <Link to="/"><img src="" alt="logo"/> </Link>
+            <Link to="/"><img src={flowmotionSmall} alt="logo"/> </Link>
           </div>
 
           <div className={"toggleBar column show" + this.state.checkboxState + " textAlign"}>
             <ul>
               <li><Link to="/">HOME</Link></li>
-              <li><Link to="/todo">SUPPORT</Link></li>
+              <li><Link to="/jobs">SUPPORT</Link></li>
               <li><Link to="/notes">COMMUNITY</Link></li>
             </ul>
           </div>
@@ -37,12 +39,12 @@ export default class Slideshow extends Component {
         <div className="menu desktop">
           <nav>
             <div className="logo">
-              <Link to="/"><img src="" alt="logo"/> </Link>
+              <Link to="/"> <img src={flowmotionSmall} /> </Link>
             </div>
 
             <ul>
               <li><Link to="/">HOME</Link></li>
-              <li><Link to="/todo">SUPPORT</Link></li>
+              <li><Link to="/jobs">SUPPORT</Link></li>
               <li><Link to="/notes">COMMUNITY</Link></li>
             </ul>
           </nav>

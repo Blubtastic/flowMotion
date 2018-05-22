@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="25px" viewBox="0 0 55 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>09A5229B-B641-43F3-9A01-EEF7AC68BC98</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-6.01" transform="translate(-954.000000, -9728.000000)">
+            <g id="10-App" transform="translate(0.000000, 8690.000000)">
+                <g id="Icons" transform="translate(412.000000, 1027.000000)">
+                    <g id="SlowMotion" transform="translate(521.000000, 1.000000)">
+                        <g id="Icons/SlowMo-Light" transform="translate(20.000000, 0.000000)">
+                            <g id="Icon_ModeSloMo">
+                                <rect id="Rectangle-path" x="0" y="0" width="57" height="44"></rect>
+                                <circle id="Oval" stroke="#FFFFFF" stroke-width="1.5" cx="43.5" cy="22.5" r="11.5"></circle>
+                                <path d="M32,11.8015943 C27.5037105,9.94286686 22.3440624,11.3866009 19.3368992,15.4067376 C16.2210336,19.5721934 16.2210336,25.4278066 19.3368992,29.5932624 C22.3440624,33.6133991 27.5037105,35.0571331 32,33.1984057 L32,11.8015943 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.5"></path>
+                                <path d="M17,11.8015943 C12.5037104,9.94286686 7.34406246,11.3866009 4.33689919,15.4067376 C1.2210336,19.5721934 1.2210336,25.4278066 4.33689919,29.5932624 C7.34406246,33.6133991 12.5037104,35.0571331 17,33.1984057 L17,11.8015943 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

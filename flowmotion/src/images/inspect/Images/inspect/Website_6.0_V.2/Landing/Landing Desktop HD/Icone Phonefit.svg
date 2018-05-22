@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="56px" viewBox="0 0 44 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>8AA60184-D7B3-4E8E-A95D-C5553F35143C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop-HD" transform="translate(-1049.000000, -12645.000000)">
+            <g id="02-Icons" transform="translate(135.000000, 12641.000000)">
+                <g id="Fitsallphones" transform="translate(904.000000, 0.000000)">
+                    <g id="Icons/Phonefit-Dark">
+                        <g id="Phones" transform="translate(10.631579, 4.000000)">
+                            <g id="Phone2">
+                                <path d="M20.1164101,49.3552632 L27.25,20.5350956 L27.25,1.47368421 C27.25,1.07400446 26.9259955,0.75 26.5263158,0.75 L1.47368421,0.75 C1.07400446,0.75 0.75,1.07400446 0.75,1.47368421 L0.75,48.6315789 C0.75,49.0312587 1.07400446,49.3552632 1.47368421,49.3552632 L20.1164101,49.3552632 Z" id="Rectangle" stroke="#000000" stroke-width="1.5"></path>
+                                <circle id="Oval-2" fill="#000000" cx="14" cy="43.4736842" r="2.21052632"></circle>
+                            </g>
+                            <g id="Phone1" transform="translate(20.631579, 20.631579)">
+                                <circle id="Oval-2-Copy" fill="#000000" cx="11.0526316" cy="30.0689381" r="1.62617973"></circle>
+                                <rect id="Rectangle" stroke="#000000" stroke-width="1.5" x="0.75" y="0.75" width="20.6052632" height="33.8684211" rx="1"></rect>
+                                <rect id="Rectangle-2" fill="#000000" x="6.63157895" y="1.47368421" width="8.84210526" height="2.94736842" rx="0.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

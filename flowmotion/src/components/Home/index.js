@@ -14,19 +14,41 @@ export default class Home extends Component {
   constructor(props){
     super(props);
 
+    //Most of the text for the webpage. Some text must be added to specific components.
     this.state = {
-      about: ["About us",
-      "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
-      "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"],
-      ourPeople: ["Our People",
-      "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
-      "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"],
-      benefits: ["Benefits", "We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in. ", "/"],
+      about: [
+        "About us",
+        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
+        "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"
+      ],
+      ourPeople: [
+        "Our People",
+        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
+        "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"
+      ],
+      benefits: [
+        "Benefits",
+        "We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in. ",
+        "/"
+      ],
+
       slideshowImages: [],
 
-      position1: ["VP of Sales", "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ", "/"],
-      position2: ["Customer Service Rep", "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ", "/" ],
-      position3: ["Marketing Manager", "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ", "/" ],
+      position1: [
+        "VP of Sales",
+        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
+        "/"
+      ],
+      position2: [
+        "Customer Service Rep",
+        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
+        "/"
+      ],
+      position3: [
+        "Marketing Manager",
+        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
+        "/"
+      ],
     }
 
   }
@@ -121,7 +143,10 @@ export default class Home extends Component {
     return (
       <div className="shaded column flowMotion">
         <h1>Join the FlowMotion Community</h1>
-        <div className="cornerButton"><div><Button/></div></div>
+        <div className="cornerButton">
+          <div></div>
+          <div><Button text={"VIEW JOBS"} link={"/jobs"} /></div>
+        </div>
       </div>
     )
   }

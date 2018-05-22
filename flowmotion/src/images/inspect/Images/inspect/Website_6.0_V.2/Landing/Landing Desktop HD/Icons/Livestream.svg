@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="34px" viewBox="0 0 47 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>118009DE-DCCD-4A4A-93D6-7E4855A256A1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop-HD" transform="translate(-964.000000, -3969.000000)">
+            <g id="05-Features" transform="translate(0.000000, 3095.000000)">
+                <g id="Icons" transform="translate(883.000000, 334.000000)">
+                    <g id="Livestream" transform="translate(29.000000, 536.000000)">
+                        <g id="Icons/Livestream" transform="translate(51.000000, 0.000000)">
+                            <g id="icon-livestream-48" transform="translate(0.500000, -3.000000)">
+                                <rect id="Rectangle-path" x="0" y="0" width="48" height="48"></rect>
+                                <g id="Group" transform="translate(1.000000, 7.000000)">
+                                    <path d="M3.17241379,0.75 C1.8345516,0.75 0.75,1.8345516 0.75,3.17241379 L0.75,30.8275862 C0.75,32.1654484 1.8345516,33.25 3.17241379,33.25 L30.8275862,33.25 C32.1654484,33.25 33.25,32.1654484 33.25,30.8275862 L33.25,3.17241379 C33.25,1.8345516 32.1654484,0.75 30.8275862,0.75 L3.17241379,0.75 Z M36.75,8.46175 L36.75,24.9668214 L44.1589375,27.3376814 C44.2413205,27.364044 44.3272949,27.3774647 44.4137931,27.3774647 C44.8756174,27.3774647 45.25,27.0030821 45.25,26.5412578 L45.25,6.88731363 C45.25,6.80081547 45.2365793,6.714841 45.2102167,6.63245806 C45.0694639,6.19260543 44.5987902,5.95013714 44.1589375,6.09088999 L36.75,8.46175 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.5"></path>
+                                    <rect id="Rectangle-path" x="9" y="9" width="16" height="16"></rect>
+                                    <path d="M13.111,17.111 C15.25852,14.9652319 18.73848,14.9652319 20.886,17.111" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M17,22.5 C17.8284271,22.5 18.5,21.8284271 18.5,21 C18.5,20.1715729 17.8284271,19.5 17,19.5 C16.1715729,19.5 15.5,20.1715729 15.5,21 C15.5,21.8284271 16.1715729,22.5 17,22.5 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.282,14.283 C13.9917486,10.5743716 20.0052514,10.5743716 23.715,14.283" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

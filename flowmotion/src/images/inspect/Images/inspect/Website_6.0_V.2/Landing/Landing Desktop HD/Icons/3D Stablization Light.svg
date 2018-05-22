@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>553E8203-E2C4-43DA-A0A5-28FBCC21B2B2</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="48"></rect>
+        <rect id="path-3" x="0" y="0" width="48" height="48"></rect>
+        <rect id="path-5" x="0" y="0" width="48" height="48"></rect>
+        <rect id="path-7" x="0" y="0" width="48" height="48"></rect>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Desktop-HD" transform="translate(-964.000000, -3430.000000)">
+            <g id="05-Features" transform="translate(0.000000, 3095.000000)">
+                <g id="Icons" transform="translate(883.000000, 334.000000)">
+                    <g id="3D-Stabilization">
+                        <g id="Icons/3D-Stablization-Light" transform="translate(80.000000, 0.000000)">
+                            <g id="icon-stabilization-48" stroke-width="1">
+                                <g id="Clipped">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="a"></g>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="a"></g>
+                                    <g id="Group" mask="url(#mask-4)">
+                                        <g transform="translate(16.000000, 2.000000)">
+                                            <rect id="Rectangle-path" stroke="none" x="0" y="0" width="16" height="16"></rect>
+                                            <path d="M8,15.5 L8,0.5" id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <polyline id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="3 5.5 8 0.5 13 5.5"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <g id="a"></g>
+                                    <g id="Group" mask="url(#mask-6)">
+                                        <g transform="translate(38.927604, 39.927939) rotate(120.000000) translate(-38.927604, -39.927939) translate(30.927604, 31.927939)">
+                                            <rect id="Rectangle-path" stroke="none" x="0" y="0" width="16" height="16"></rect>
+                                            <path d="M8,15.5 L8,0.5" id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <polyline id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="3 5.5 8 0.5 13 5.5"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Clipped">
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <g id="a"></g>
+                                    <g id="Group" mask="url(#mask-8)">
+                                        <g transform="translate(9.000552, 39.927669) rotate(-120.000000) translate(-9.000552, -39.927669) translate(1.000552, 31.927669)">
+                                            <rect id="Rectangle-path" stroke="none" x="0" y="0" width="16" height="16"></rect>
+                                            <path d="M8,15.5 L8,0.5" id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <polyline id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="3 5.5 8 0.5 13 5.5"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <text id="3D" fill="#DADCDD" font-family="Type-36-Bold, Type-36" font-size="12" font-weight="bold">
+                                <tspan x="16" y="32">3D</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

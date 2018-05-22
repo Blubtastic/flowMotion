@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="62px" viewBox="0 0 51 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>BDC3775A-A65E-4F2C-84EC-070A0E58B2C1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQ-Desktop-HD" transform="translate(-994.000000, -1655.000000)">
+            <g id="Stacked-Group" transform="translate(251.000000, 942.000000)">
+                <g id="03-All-topics" transform="translate(72.000000, 589.000000)">
+                    <g id="icon-manual-48" transform="translate(664.000000, 122.000000)">
+                        <rect id="Rectangle-path" x="0" y="0" width="64" height="64"></rect>
+                        <g id="Group" transform="translate(8.666667, 3.333333)" stroke="#000000" stroke-width="2.5">
+                            <polyline id="Shape" stroke-linecap="square" points="38.6666667 0 38.6666667 22.6666667 30.6666667 17.3333333 22.6666667 22.6666667 22.6666667 0"></polyline>
+                            <path d="M48,48 L48,0 L5.33333333,0 C2.388,0 0,2.388 0,5.33333333 L0,53.3333333" id="Shape"></path>
+                            <path d="M48,58.6666667 L48,48 L5.33333333,48 C2.388,48 0,50.388 0,53.3333333 C0,56.2786667 2.388,58.6666667 5.33333333,58.6666667 L48,58.6666667 Z M8,48 L8,10.6666667 L8,48 Z" id="Shape" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

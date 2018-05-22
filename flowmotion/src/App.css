@@ -19,6 +19,10 @@ h2{
   font-weight: 400;
   font-size: 200%;
 }
+h3{
+  font-weight: 400;
+  font-size: 140%;
+}
 h4{
     margin: 10px 0;
 }
@@ -92,6 +96,9 @@ h4{
 .textAlign{
   text-align: center;
 }
+.leftText{
+  text-align: left;
+}
 .alignTop{
   display: flex;
   justify-content: flex-start !important;
@@ -114,6 +121,7 @@ h4{
   padding-right: 20px;
   box-sizing: border-box;
 }
+
 
 /* MOBILE STYLING */
 @media only screen and (max-width: 480px)   {
@@ -148,6 +156,12 @@ h4{
   align-items: center;
   text-align: center;
 }
+@media only screen and (min-width: 480px)   {
+  .wideButton div{
+    width: 400px;
+  }
+}
+
 
 .playButton{
   fill-opacity: 0.6;
@@ -202,4 +216,32 @@ h4{
 .benefits div{
   display: flex;
   justify-content: space-between;
+}
+
+
+/* JOBS PAGE STYLES */
+/* COVER IMAGE */
+.jobsCover h1{
+  top: 120px;
+}
+.jobsCover p{
+  position: relative;
+  top: -50px;
+}
+@media only screen and (min-width: 480px)   {
+  .jobsCover div{
+    top: 370px;
+  }
+}
+@media only screen and (max-width: 480px)   {
+  .jobsCover p{
+    top: -100px;
+  }
+}
+.bulletItems{
+  text-align: left;
+}
+.bulletItems li{
+    list-style: url("./images/bulletLine.png");
+    padding: 10px 0;
 }
