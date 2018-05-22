@@ -5,7 +5,7 @@ import Cover from '../Cover';
 
 import Button from '../Molecules/Button';
 import TextBlock from '../Molecules/TextBlock';
-import TextList from '../Molecules/TextList';
+import BulletList from '../Molecules/BulletList';
 import TextIcon from '../Molecules/TextIcon';
 
 
@@ -13,7 +13,7 @@ export default class Jobs extends Component{
   constructor(props){
     super(props);
 
-    //Most of the text for the webpage. Some text must be added to specific components.
+    //Webpage text is filled in here. Not a great solution, but makes it easy to update the content without a server.
     this.state = {
       about: [
         "About us",
@@ -74,35 +74,35 @@ export default class Jobs extends Component{
         </div>
 
 
-        <div className="container sidePadding column">
+        <div className="container column">
 
           {/* TEXT About Us section */}
-          <div className="paragraph wideContainer">
+          <div className="paragraph wideContainer sidePadding">
             <TextBlock title={this.state.about[0]} p1={this.state.about[1]} p2={this.state.about[2]} />
           </div>
 
           {/* TEXT what you'll do */}
-          <div className="paragraph wideContainer smallPadding">
+          <div className="paragraph wideContainer smallPadding sidePadding">
             <TextBlock title={this.state.whatYouDo[0]} p1={this.state.about[1]} />
           </div>
 
           {/* BULLET responsibilities*/}
-          <div className="paragraph wideContainer smallPadding">
-            <TextList text={this.state.responsibilities}/>
+          <div className="paragraph wideContainer smallPadding smallSidePadding">
+            <BulletList text={this.state.responsibilities}/>
           </div>
 
           {/* BULLET key qualifications*/}
-          <div className="paragraph wideContainer smallPadding">
-            <TextList text={this.state.keyQualifications}/>
+          <div className="paragraph wideContainer smallPadding smallSidePadding">
+            <BulletList text={this.state.keyQualifications}/>
           </div>
 
           {/* BULLET key bonus points*/}
-          <div className="paragraph wideContainer smallPadding">
-            <TextList text={this.state.bonusPoints}/>
+          <div className="paragraph wideContainer smallPadding smallSidePadding">
+            <BulletList text={this.state.bonusPoints}/>
           </div>
 
           {/* BENEFITS section */}
-          <div className="paragraph wideContainer sidePadding leftText">
+          <div className="paragraph wideContainer leftText smallSidePadding">
             <div>
               <h3>Benefits</h3>
               <p>We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in.</p>
@@ -122,10 +122,11 @@ export default class Jobs extends Component{
           </div>
 
           {/* BULLET key bonus points*/}
-          <div className="paragraph wideContainer smallPadding">
-            <TextList text={this.state.includeInAppl}/>
+          <div className="paragraph wideContainer smallPadding smallSidePadding">
+            <BulletList text={this.state.includeInAppl}/>
           </div>
 
+          {/* BUTTON apply*/}
           <div className="maxWidth centerAlign padding wideButton">
             <Button text={"APPLY"} link={"/"} />
           </div>
@@ -137,7 +138,7 @@ export default class Jobs extends Component{
     )
   }
 
-
+  //Generates the
   jobsCoverContent(){
     return (
       <div className="shaded column jobsCover sidePadding">

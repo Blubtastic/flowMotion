@@ -32,7 +32,7 @@ export default class Home extends Component {
         "/"
       ],
 
-      slideshowImages: [],
+
 
       position1: [
         "VP of Sales",
@@ -49,6 +49,19 @@ export default class Home extends Component {
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
         "/"
       ],
+      //CoreValueTexts and coreValueTitles must have a length of 4!
+      coreValueTexts: [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi",
+        "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",
+        "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary."
+      ],
+      coreValueTitles: [
+        "Transparency",
+        "Flow",
+        "Motion",
+        "Discipline",
+      ]
     }
 
   }
@@ -75,7 +88,7 @@ export default class Home extends Component {
 
         {/* Core Values section */}
         <div className="container black centerAlign textAlign sidePadding">
-          <CoreValues/>
+          <CoreValues titles={this.state.coreValueTitles} texts={this.state.coreValueTexts}/>
         </div>
 
         {/* Slideshow section */}
@@ -154,7 +167,7 @@ export default class Home extends Component {
   //Returns the content for the "the mission" cover part.
   missionCoverContent(){
     return (
-      <div className="shaded column whiteText alignTop sidePadding padding textAlign">
+      <div className="shaded dark column whiteText alignTop sidePadding padding textAlign">
         <h2>The Mission</h2>
         <p>Our mission for FlowMotion is to build a global, Scandinavian brand. </p>
         <svg className="playButton" height="140" width="140">

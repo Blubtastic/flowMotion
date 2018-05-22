@@ -39,7 +39,7 @@ export default class Slideshow extends Component {
         <div className="menu desktop">
           <nav>
             <div className="logo">
-              <Link to="/"> <img src={flowmotionSmall} /> </Link>
+              <Link to="/"> <img src={flowmotionSmall} alt="logo"/> </Link>
             </div>
 
             <ul>

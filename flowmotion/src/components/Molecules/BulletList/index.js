@@ -1,14 +1,13 @@
 import React from 'react';
 
-const TextList = ({text}) => {
+const BulletList = ({text}) => {
 
   //One bullet item for each
   let bullets = [];
   for (let x = 0; x < text.length; x++) {
-    bullets.push(<li>{text[x]}</li>);
+    bullets.push(<li key={x}>{text[x]}</li>);
   }
   bullets.shift();
-  console.log(bullets);
 
   return(
     <div className="bulletItems">
@@ -20,4 +19,4 @@ const TextList = ({text}) => {
   )
 }
 
-export default TextList
+export default BulletList

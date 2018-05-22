@@ -9,7 +9,7 @@ export default class Footer extends Component {
     return(
       <div className="footerContainer">
 
-        <div className="footer row centerAlign">
+        <div className="footer row centerAlign sidePadding">
           <div>
             <Link to="/"><img src={flowmotion} alt="logo"/> </Link>
           </div>
