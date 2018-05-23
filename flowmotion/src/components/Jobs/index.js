@@ -116,9 +116,9 @@ export default class Jobs extends Component{
               <h3>Benefits</h3>
               <p>We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in.</p>
             </div>
-            <div className="benefits wideContainer">
+            <div className="benefits wideContainer blackText">
 
-              <div className="row padding">
+              <div className="row padding ">
                 <TextIcon image={coffee} word={"Coffee"} />
                 <TextIcon image={food} word={"Lunch"} />
                 <TextIcon image={party} word={"Social events"} />

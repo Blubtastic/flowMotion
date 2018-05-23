@@ -119,7 +119,7 @@ export default class Home extends Component {
         <div className="container black grayText">
           <div className="paragraph wideContainer sidePadding ">
             <TextBlock title={this.state.benefits[0]} p1={this.state.benefits[1]} />
-            <div className="benefits wideContainer topPadding">
+            <div className="benefits wideContainer topPadding whiteText ">
 
               <div className="row">
                 <TextIcon image={coffee} word={"Coffee"}/>

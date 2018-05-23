@@ -3,6 +3,7 @@
 body{
   font-family: 'type-36', 'Open Sans', sans-serif;
   font-weight: 600;
+
 }
 
 a{
@@ -139,7 +140,7 @@ h4{
   box-sizing: border-box;
 }
 .topPadding{
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 
@@ -184,6 +185,11 @@ h4{
 }
 .playButton img{
   width: 150px;
+}
+@media only screen and (max-width: 480px){
+  .playButton img{
+    width: 90px;
+  }
 }
 .playButton + h3{
   margin: 0;
