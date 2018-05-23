@@ -8,6 +8,8 @@ import TextBlock from '../Molecules/TextBlock';
 import BulletList from '../Molecules/BulletList';
 import TextIcon from '../Molecules/TextIcon';
 
+import arrow from '../../images/arrowWhite.png';
+
 
 export default class Jobs extends Component{
   constructor(props){
@@ -145,7 +147,7 @@ export default class Jobs extends Component{
         <h1>VP of Sales</h1>
         <p className="whiteText narrowContainer textAlign">Lorem Ipsum dolor sit amet, an eum suspicit expendante, sea movet volumes senserit ex, Ullum ominium ei cum sea movet.</p>
         <div className="cornerButton">
-          <div><Link to="/">Back to jobs</Link></div>
+          <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
           <div><Button text={"APPLY"} link={"/"} /></div>
         </div>
       </div>

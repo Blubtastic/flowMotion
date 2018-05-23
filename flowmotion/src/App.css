@@ -166,10 +166,16 @@ h4{
   flex-direction: row;
   justify-content: space-between;
 }
-.coreIcons div{
-  height: 100px;
-  width: 100px;
-  background-color: #fff;
+.coreIcons img{
+  height: auto;
+  width: 80px;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bot: 20px;
+}
+.arrowDown{
+  margin: auto;
+  width: 30px !important;
 }
 .positionCards{
   flex-wrap: wrap;
@@ -190,8 +196,12 @@ h4{
   max-width: 100%;
   border-radius: 6px;
 }
+.positionCard div:first-child{
+  margin-right: 20px;
+}
 .positionCard h4, .positionCard p{
   margin: 5px 0;
+  font-size: 70%;
 }
 
 .instaImage{

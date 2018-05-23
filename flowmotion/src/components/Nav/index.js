@@ -10,6 +10,8 @@ export default class Slideshow extends Component {
     this.state = {
       checkboxState: false,
     }
+    //Bind the function to this class here instead of everywhere it's called
+    this.checked = this.checked.bind(this);
   }
 
   render(){
@@ -18,7 +20,7 @@ export default class Slideshow extends Component {
         <nav id="hamburger" className="mobile active column">
           <div className="burgerLogo row">
             <div>
-              <input type="checkbox" onClick={this.checked.bind(this)} />
+              <input type="checkbox" onClick={this.checked} />
               <span></span>
               <span></span>
             </div>
@@ -27,9 +29,9 @@ export default class Slideshow extends Component {
 
           <div className={"toggleBar column show" + this.state.checkboxState + " textAlign"}>
             <ul>
-              <li><Link to="/">HOME</Link></li>
-              <li><Link to="/jobs">SUPPORT</Link></li>
-              <li><Link to="/notes">COMMUNITY</Link></li>
+              <li><Link onClick={this.checked} to="/">HOME</Link></li>
+              <li><Link onClick={this.checked} to="/jobs">SUPPORT</Link></li>
+              <li><Link onClick={this.checked} to="/notes">COMMUNITY</Link></li>
             </ul>
           </div>
         </nav>
