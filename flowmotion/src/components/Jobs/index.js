@@ -79,7 +79,7 @@ export default class Jobs extends Component{
 
         {/* COVER Image section */}
         <div>
-          <Cover image={"jobs.jpg"} top={"-540px"} Component={this.jobsCoverContent()}/>
+          <Cover image={"jobs.jpg"} height={"480px"} top={"-540px"}  Component={this.jobsCoverContent()}/>
         </div>
 
 

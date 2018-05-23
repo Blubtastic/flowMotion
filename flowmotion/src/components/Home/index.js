@@ -96,7 +96,7 @@ export default class Home extends Component {
 
         {/* Mission / Video section */}
         <div>
-          <Cover image={"mission.jpg"} top={"-320px"} Component={this.missionCoverContent()}/>
+          <Cover image={"mission.jpg"} top={"-320px"} height={"735px"} Component={this.missionCoverContent()}/>
         </div>
 
         {/* Core Values section */}

@@ -27,12 +27,12 @@
 /* RESPONSIVE NAV (BURGER MENU) */
 /* Switch between desktop and mobile navs */
 /*  */
-@media only screen and (max-width: 480px)   {
+@media only screen and (max-width: 701px)   {
   .desktop{
     display: none !important;
   }
 }
-@media only screen and (min-width: 481px)   {
+@media only screen and (min-width: 700px)   {
   .mobile{
     display: none !important;
   }
@@ -58,6 +58,14 @@
 .showfalse{
   top: -180px;
   transition: top 0.55s;
+}
+
+.largeLogo{
+  position: relative;
+  top: 13px;
+}
+.largeLogo img{
+  width: 250px;
 }
 
 .burgerLogo div{

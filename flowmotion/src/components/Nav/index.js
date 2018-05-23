@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom';
 import flowmotion from '../../images/flowmotion.svg';
-import flowmotionSmall from '../../images/flowmotion.svg';
+import flowmotionFull from '../../images/flowmotionFull.svg';
 import './nav.css'
 
 export default class Slideshow extends Component {
@@ -25,7 +25,7 @@ export default class Slideshow extends Component {
               <span></span>
               <span></span>
             </div>
-            <Link to="/"><img src={flowmotionSmall} alt="logo"/> </Link>
+            <Link to="/"><img src={flowmotion} alt="logo"/> </Link>
           </div>
 
           <div className={"toggleBar column show" + this.state.checkboxState + " textAlign"}>
@@ -41,8 +41,8 @@ export default class Slideshow extends Component {
 
         <div className="menu desktop">
           <nav>
-            <div className="logo">
-              <Link to="/"> <img src={flowmotionSmall} alt="logo"/> </Link>
+            <div className="largeLogo">
+              <Link to="/"> <img src={flowmotionFull} alt="logo"/> </Link>
             </div>
 
             <ul>
@@ -64,5 +64,4 @@ export default class Slideshow extends Component {
     this.refs.navCheck.checked = false;
     this.setState({checkboxState: !this.state.checkboxState});
   }
-
 }
