@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 
-import transparency from '../../images/transparency.png';
-import idea from '../../images/idea.png';
-import travel from '../../images/travel.png';
-import fun from '../../images/fun.png';
+import transparency from '../../images/icons/transparency.png';
+import idea from '../../images/icons/idea.png';
+import travel from '../../images/icons/travel.png';
+import fun from '../../images/icons/fun.png';
 
-import transparencyWhite from '../../images/transparencyWhite.png';
-import ideaWhite from '../../images/ideaWhite.png';
-import travelWhite from '../../images/travelWhite.png';
-import funWhite from '../../images/funWhite.png';
+import transparencyWhite from '../../images/icons/transparencyWhite.png';
+import ideaWhite from '../../images/icons/ideaWhite.png';
+import travelWhite from '../../images/icons/travelWhite.png';
+import funWhite from '../../images/icons/funWhite.png';
 
 import arrow from '../../images/arrowRed.png'
 

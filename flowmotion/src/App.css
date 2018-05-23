@@ -171,7 +171,7 @@ h4{
   width: 80px;
   max-width: 100%;
   padding-top: 20px;
-  padding-bot: 20px;
+  padding-bottom: 10px;
 }
 .arrowDown{
   margin: auto;
@@ -196,11 +196,9 @@ h4{
   max-width: 100%;
   border-radius: 6px;
 }
-.positionCard div:first-child{
-  margin-right: 20px;
-}
 .positionCard h4, .positionCard p{
   margin: 5px 0;
+  margin-right: 20px;
   font-size: 70%;
 }
 
@@ -223,14 +221,36 @@ h4{
   filter: grayscale(100%);
 }
 
+.benefits{
+  padding-top: 50px;
+}
 .benefits div{
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (min-width: 481px){
-  .benefits div{
-    padding-left: 35px;
-    padding-right: 35px;
+.benefits > div > div{
+  width: 80px;
+  height: auto;
+  max-width: 100%;
+}
+.benefits img{
+  width: 100%;
+  height: auto;
+}
+/* Large margins for desktop */
+@media only screen and (min-width: 481px)   {
+  .benefits > div{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+/* Make things smaller for mobile */
+@media only screen and (max-width: 480px)   {
+  .benefits p{
+    font-size: 80%;
+  }
+  .benefits > div > div{
+      width: 50px;
   }
 }
 

@@ -8,6 +8,13 @@ import TextBlock from '../Molecules/TextBlock';
 import BulletList from '../Molecules/BulletList';
 import TextIcon from '../Molecules/TextIcon';
 
+import coffee from '../../images/icons/coffeeBlack.png';
+import food from '../../images/icons/foodBlack.png';
+import party from '../../images/icons/partyBlack.png';
+import money from '../../images/icons/moneyBlack.png';
+import schedule from '../../images/icons/scheduleBlack.png';
+import position from '../../images/icons/positionBlack.png';
+
 import arrow from '../../images/arrowWhite.png';
 
 
@@ -110,16 +117,18 @@ export default class Jobs extends Component{
               <p>We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in.</p>
             </div>
             <div className="benefits wideContainer">
+
               <div className="row padding">
-                <TextIcon image={"instagram.png"} word={"Benefit 1"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 2"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 3"} />
+                <TextIcon image={coffee} word={"Coffee"} />
+                <TextIcon image={food} word={"Lunch"} />
+                <TextIcon image={party} word={"Social events"} />
               </div>
               <div className="row">
-                <TextIcon image={"instagram.png"} word={"Benefit 4"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 5"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 6"} />
+                <TextIcon image={money} word={"Competitive salary"} />
+                <TextIcon image={schedule} word={"Flexible hours"} />
+                <TextIcon image={position} word={"Convenient location"} />
               </div>
+
             </div>
           </div>
 

@@ -9,6 +9,15 @@ import Position from '../Molecules/Position'
 import InstaImage from '../Molecules/InstaImage'
 import TextIcon from '../Molecules/TextIcon';
 
+//Icons
+import coffee from '../../images/icons/coffee.png';
+import food from '../../images/icons/food.png';
+import party from '../../images/icons/party.png';
+import money from '../../images/icons/money.png';
+import schedule from '../../images/icons/schedule.png';
+import position from '../../images/icons/position.png';
+
+
 //Homepage content. Everything except the navbar
 export default class Home extends Component {
   constructor(props){
@@ -107,16 +116,18 @@ export default class Home extends Component {
           <div className="paragraph wideContainer sidePadding ">
             <TextBlock title={this.state.benefits[0]} p1={this.state.benefits[1]} />
             <div className="benefits wideContainer">
-              <div className="row padding">
-                <TextIcon image={"instagram.png"} word={"Benefit 1"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 2"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 3"} />
+
+              <div className="row">
+                <TextIcon image={coffee} word={"Coffee"} />
+                <TextIcon image={food} word={"Lunch"} />
+                <TextIcon image={party} word={"Social events"} />
               </div>
               <div className="row">
-                <TextIcon image={"instagram.png"} word={"Benefit 4"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 5"} />
-                <TextIcon image={"instagram.png"} word={"Benefit 6"} />
+                <TextIcon image={money} word={"Competitive salary"} />
+                <TextIcon image={schedule} word={"Flexible hours"} />
+                <TextIcon image={position} word={"Convenient location"} />
               </div>
+
             </div>
           </div>
         </div>
@@ -124,7 +135,7 @@ export default class Home extends Component {
         {/* Open Positions section */}
         <div className="container centerAlign column">
           <h2>Open Positions</h2>
-          <div className="positionCards row wideContainer">
+          <div className="positionCards row wideContainer maxWidth">
             <Position title={this.state.position1[0]} text={this.state.position1[1]} link={this.state.position1[2]} />
             <Position title={this.state.position2[0]} text={this.state.position2[1]} link={this.state.position2[2]} />
             <Position title={this.state.position3[0]} text={this.state.position3[1]} link={this.state.position3[2]} />
