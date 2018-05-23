@@ -1,8 +1,15 @@
 .slideshowContainer{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
   align-items: center;
+  width: 1450px;
   max-width: 100%;}
+
+.slideshowContainer img{
+  width: 60px;
+}
 
 .slideContainer {
   position: relative;

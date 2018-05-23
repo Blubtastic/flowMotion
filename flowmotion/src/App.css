@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
 body{
   font-family: 'type-36', 'Open Sans', sans-serif;
   font-weight: 600;
@@ -39,6 +38,7 @@ h3{
 
 h4{
     margin: 10px 0; }
+
 
 /* GENERAL CLASSES */
 .page{
