@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom';
 import Cover from '../Cover';
 import CoreValues from '../CoreValues';
 import Slideshow from '../Slideshow';
@@ -17,6 +18,8 @@ import money from '../../images/icons/money.png';
 import schedule from '../../images/icons/schedule.png';
 import position from '../../images/icons/position.png';
 
+import playIcon from '../../images/playIcon.png';
+
 
 //Homepage content. Everything except the navbar
 export default class Home extends Component {
@@ -30,18 +33,18 @@ export default class Home extends Component {
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
         "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"
       ],
+
       ourPeople: [
         "Our People",
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
         "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"
       ],
+
       benefits: [
         "Benefits",
         "We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in. ",
         "/"
       ],
-
-
 
       position1: [
         "VP of Sales",
@@ -58,6 +61,7 @@ export default class Home extends Component {
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
         "/"
       ],
+
       //CoreValueTexts and coreValueTitles must have a length of 4!
       coreValueTexts: [
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",
@@ -92,7 +96,7 @@ export default class Home extends Component {
 
         {/* Mission / Video section */}
         <div>
-          <Cover image={"mission.jpg"} height={"700px"} top={"-350px"} Component={this.missionCoverContent()}/>
+          <Cover image={"mission.jpg"} top={"-320px"} Component={this.missionCoverContent()}/>
         </div>
 
         {/* Core Values section */}
@@ -112,17 +116,17 @@ export default class Home extends Component {
         </div>
 
         {/* Benefits section */}
-        <div className="container black whiteText">
+        <div className="container black grayText">
           <div className="paragraph wideContainer sidePadding ">
             <TextBlock title={this.state.benefits[0]} p1={this.state.benefits[1]} />
-            <div className="benefits wideContainer">
+            <div className="benefits wideContainer topPadding">
 
               <div className="row">
-                <TextIcon image={coffee} word={"Coffee"} />
+                <TextIcon image={coffee} word={"Coffee"}/>
                 <TextIcon image={food} word={"Lunch"} />
                 <TextIcon image={party} word={"Social events"} />
               </div>
-              <div className="row">
+              <div className="row topPadding">
                 <TextIcon image={money} word={"Competitive salary"} />
                 <TextIcon image={schedule} word={"Flexible hours"} />
                 <TextIcon image={position} word={"Convenient location"} />
@@ -167,7 +171,7 @@ export default class Home extends Component {
   homeCoverContent(){
     return (
       <div className="shaded column flowMotion">
-        <h1>Join the FlowMotion Community</h1>
+        <h1 className="smallSidePadding">Join the FlowMotion Community</h1>
         <div className="cornerButton">
           <div></div>
           <div><Button text={"VIEW JOBS"} link={"/jobs"} /></div>
@@ -179,12 +183,11 @@ export default class Home extends Component {
   //Returns the content for the "the mission" cover part.
   missionCoverContent(){
     return (
-      <div className="shaded dark column whiteText alignTop sidePadding padding textAlign">
+      <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
         <h2>The Mission</h2>
-        <p>Our mission for FlowMotion is to build a global, Scandinavian brand. </p>
-        <svg className="playButton" height="140" width="140">
-          <circle cx="70" cy="70" r="70" fill="white" />
-        </svg>
+        <p className="missionText">Our mission for FlowMotion is to build a global, Scandinavian brand. </p>
+        <Link to="/" className="playButton"><img src={playIcon} alt="play"/></Link>
+        <h3>PLAY VIDEO</h3>
       </div>
     )
   }

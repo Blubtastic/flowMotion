@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import './slideshow.css';
 import Slide from './slide.js';
 
+import previous from '../../images/leftIcon.png'
+import next from '../../images/rightIcon.png'
+
 export default class Slideshow extends Component {
   constructor(props){
     super(props);
@@ -37,11 +40,11 @@ export default class Slideshow extends Component {
     return(
       <div className="maxWidth">
         <div className="slideshowContainer">
-          <button onClick={this.previousSlide}>Prev</button>
+          <img onClick={this.previousSlide} src={previous} alt="change slide"/>
           <div className="slideContainer">
             {this.generateSlides()}
           </div>
-          <button onClick={this.nextSlide}>Next</button>
+          <img onClick={this.nextSlide} src={next} alt="change slide"/>
         </div>
 
         <div className="centerAlign">

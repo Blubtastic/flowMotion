@@ -3,9 +3,9 @@ import React from 'react';
 const TextIcon = ({image, word}) => {
 
   return(
-    <div className="column">
+    <div className="column centerAlign">
       <img src={image} alt="benefit" />
-      <p>{word}</p>
+      <p className="whiteText">{word}</p>
     </div>
   )
 }

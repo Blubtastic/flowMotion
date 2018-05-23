@@ -76,9 +76,11 @@
 }
 .burgerLogo a{
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-
+.burgerLogo img{
+  width: 80px;
+}
 
 /* Anomations */
 .burgerLogo span{

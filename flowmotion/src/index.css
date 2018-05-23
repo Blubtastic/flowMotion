@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'type-36';
+  src: local('type-36'),
+
+
+  url(./fonts/type-36-light-hdc.eot) format('embedded-opentype'), /* IE6-IE8 */
+  url(./fonts/type-36-light-hdc.ttf) format('truetype'), /* Safari, Android, iOS */
+  url(./fonts/type-36-light-hdc.woff) format('woff'),
+  url(./fonts/type-36-light-hdc.woff2) format('woff2'), /* Super Modern Browsers */
+
+  url(./fonts/type-36-medium-hdc.eot) format('embedded-opentype'), /* IE6-IE8 */
+  url(./fonts/type-36-medium-hdc.ttf) format('truetype'), /* Safari, Android, iOS */
+  url(./fonts/type-36-medium-hdc.woff) format('woff'),
+  url(./fonts/type-36-medium-hdc.woff2) format('woff2'); /* Super Modern Browsers */
+
+
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }

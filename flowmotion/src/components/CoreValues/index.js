@@ -23,7 +23,7 @@ export default class CoreValues extends Component {
   }
   render() {
     return(
-        <div className="whiteText coverWidth maxWidth">
+        <div className="grayText coverWidth maxWidth">
           <h2>Core Values</h2>
           <div className="coreIcons narrowContainer">
 
@@ -57,7 +57,7 @@ export default class CoreValues extends Component {
   }
   //Returns the right title
   renderTitle(){
-    return <h2 className="redText">{this.props.titles[this.state.index]}</h2>
+    return <h2 className="redText coreValueHeader">{this.props.titles[this.state.index]}</h2>
   }
   //Returns the right text
   renderText(){
