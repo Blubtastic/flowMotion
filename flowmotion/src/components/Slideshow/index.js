@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import './slideshow.css';
+
 import Slide from './slide.js';
+import SimpleSlider from '../MobileSlideshow';
 
 import previous from '../../images/leftIcon.png'
 import next from '../../images/rightIcon.png'
@@ -19,10 +20,12 @@ export default class Slideshow extends Component {
       "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.",
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur"],
       currentIndex: 1,
+      mobile: false,
     }
     //Must bind the function to use state.
     this.nextSlide = this.nextSlide.bind(this);
     this.previousSlide = this.previousSlide.bind(this);
+    this.updateIndex = this.updateIndex.bind(this);
   }
   componentDidMount(){
     //Generate indexes for all images.
@@ -38,17 +41,24 @@ export default class Slideshow extends Component {
   //RENDER
   render() {
     return(
-      <div className="maxWidth">
-        <div className="slideshowContainer">
-          <img onClick={this.previousSlide} src={previous} alt="change slide"/>
-          <div className="slideContainer">
-            {this.generateSlides()}
+      <div>
+        <div className="maxWidth alignItems desktop">
+          <div className="slideshowContainer">
+            <img onClick={this.previousSlide} src={previous} alt="change slide"/>
+            <div className="slideContainer">
+              {this.generateSlides()}
+            </div>
+            <img onClick={this.nextSlide} src={next} alt="change slide"/>
           </div>
-          <img onClick={this.nextSlide} src={next} alt="change slide"/>
+        </div>
+
+
+        <div className="mobileSlideshow mobile">
+          <SimpleSlider images={this.state.images} updateIndex={this.updateIndex} />
         </div>
 
         <div className="centerAlign">
-        {this.generateCircles()}
+          {this.generateCircles()}
         </div>
         <div className="textAlign narrowContainer sidePadding">
           <h2>{this.state.names[this.state.currentIndex]}</h2>
@@ -58,8 +68,9 @@ export default class Slideshow extends Component {
     )
   }
 
-
-
+  updateIndex(newIndex){
+    this.setState({ currentIndex: newIndex });
+  }
   //Generates the slideshow images (components)
   generateSlides(){
     let children = [];

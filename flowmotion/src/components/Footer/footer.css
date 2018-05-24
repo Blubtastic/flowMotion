@@ -5,16 +5,23 @@
 }
 .footer{
   padding-bottom: 280px;
-  width: 1000px;
+  width: 1200px;
   max-width: 100%;
   margin: auto;
   flex-wrap: wrap;
+  text-align: left;
 }
+
 @media only screen and (max-width: 480px)   {
   .footer{
     text-align: center;
     flex-direction: column;
     padding-bottom: 100px;
+    align-items: center;
+  }
+  .footer img{
+    width: 200px !important;
+    padding-bottom: 50px;
   }
   .extraLinks{
     display: none;
@@ -22,16 +29,14 @@
   .copyright{
     font-size: 70% !important;
   }
-
 }
-@media only screen and (min-width: 480px)   {
+@media only screen and (min-width: 481px)   {
   .mobileLinks{
     display: none;
   }
 }
-
-.footer img{
-  width: 100px;
+.largeFooterLogo img{
+  width: 400px;
 }
 .footer div{
   flex-grow: 1;
@@ -40,7 +45,9 @@
 }
 .footer div div a{
   margin: 6px 0;
+  font-size: 180%;
 }
+
 .copyright{
   margin: 0px;
   padding-bottom: 25px;

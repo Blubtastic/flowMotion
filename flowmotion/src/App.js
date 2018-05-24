@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter hashType="noslash">
-        <div>
+        <div className="pageContainer">
           <Nav/>
 
           <Route exact path="/" component={Home}/>

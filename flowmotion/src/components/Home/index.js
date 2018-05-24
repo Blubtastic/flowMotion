@@ -37,7 +37,6 @@ export default class Home extends Component {
       ourPeople: [
         "Our People",
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people to join our journey.",
-        "We are now one of the top 150 most-fnuded Kickstarter campaigns with a passionate community of over 7,000 people. We're on a mission to put an end to shaky videos world wide. And we have the ultimate tool to do it. We hope so you can be a part of this mission!"
       ],
 
       benefits: [
@@ -110,7 +109,7 @@ export default class Home extends Component {
             <TextBlock title={this.state.ourPeople[0]} p1={this.state.ourPeople[1]} p2={this.state.ourPeople[2]} />
           </div>
 
-          <div className="centerAlign">
+          <div className="topPadding">
             <Slideshow/>
           </div>
         </div>

@@ -3,6 +3,9 @@ body{
   font-family: 'type-36', 'Open Sans', sans-serif;
   font-weight: 600;
 }
+.pageContainer{
+    overflow-x: hidden;
+}
 
 a{
   text-decoration: none;

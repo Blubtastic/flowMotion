@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './footer.css'
+import flowmotionFull from '../../images/flowmotionFull.svg';
 import flowmotion from '../../images/flowmotion.svg';
 
 export default class Footer extends Component {
@@ -9,9 +10,10 @@ export default class Footer extends Component {
     return(
       <div className="footerContainer">
 
-        <div className="footer row centerAlign sidePadding">
+        <div className="footer row sidePadding">
           <div>
-            <Link to="/"><img src={flowmotion} alt="logo"/> </Link>
+            <Link className="largeFooterLogo" to="/"><img src={flowmotionFull} alt="logo"/> </Link>
+
           </div>
 
           <div className="row">
