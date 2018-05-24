@@ -61,7 +61,7 @@ export default class Slideshow extends Component {
           {this.generateCircles()}
         </div>
         <div className="textAlign narrowContainer sidePadding">
-          <h2>{this.state.names[this.state.currentIndex]}</h2>
+          <h2 className="slideshowHeader">{this.state.names[this.state.currentIndex]}</h2>
           <p>{this.state.descriptions[this.state.currentIndex]}</p>
         </div>
       </div>

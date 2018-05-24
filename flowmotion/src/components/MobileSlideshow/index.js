@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import image from '../../images/mission.jpg'
 
 export default class SimpleSlider extends Component {
   //const photo = require('../../images/slideshow/' + image);
@@ -34,7 +33,7 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           {imageUrls.map((imageUrls) =>
-            <div> <img src={imageUrls} /> </div>
+            <div key={imageUrls.toString()}> <img src={imageUrls} alt="slideshow"/> </div>
           )}
         </Slider>
       </div>

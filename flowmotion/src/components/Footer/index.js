@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './footer.css'
 import flowmotionFull from '../../images/flowmotionFull.svg';
-import flowmotion from '../../images/flowmotion.svg';
 
 export default class Footer extends Component {
 

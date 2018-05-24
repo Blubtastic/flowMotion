@@ -4,7 +4,7 @@ import arrow from '../../../images/arrowBlack.png'
 
 const Position = ({ title, text, link }) => {
   return(
-    <Link to="/" className="positionCard centerAlign blackText maxWidth row">
+    <Link to={link} className="positionCard centerAlign blackText maxWidth row">
       <div className="row">
         <div>
           <h4>{title}</h4>

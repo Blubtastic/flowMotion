@@ -48,7 +48,7 @@ export default class Home extends Component {
       position1: [
         "VP of Sales",
         "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
-        "/"
+        "jobs"
       ],
       position2: [
         "Customer Service Rep",
@@ -75,8 +75,8 @@ export default class Home extends Component {
         "Discipline",
       ]
     }
-
   }
+
   render() {
     return(
       <div className="page">
