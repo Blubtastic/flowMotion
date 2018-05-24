@@ -57,7 +57,7 @@ export default class Slideshow extends Component {
           <SimpleSlider images={this.state.images} updateIndex={this.updateIndex} />
         </div>
 
-        <div className="centerAlign">
+        <div className="centerAlign desktop">
           {this.generateCircles()}
         </div>
         <div className="textAlign narrowContainer sidePadding">
