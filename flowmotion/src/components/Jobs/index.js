@@ -86,12 +86,12 @@ export default class Jobs extends Component{
 
           {/* TEXT About Us section */}
           <div className="paragraph wideContainer sidePadding">
-            <TextBlock title={this.state.about[0]} p1={this.state.about[1]} p2={this.state.about[2]} />
+            <TextBlock content={this.state.about} />
           </div>
 
           {/* TEXT what you'll do */}
           <div className="paragraph wideContainer smallPadding sidePadding">
-            <TextBlock title={this.state.whatYouDo[0]} p1={this.state.about[1]} />
+            <TextBlock content={this.state.whatYouDo} />
           </div>
 
           {/* BULLET responsibilities*/}

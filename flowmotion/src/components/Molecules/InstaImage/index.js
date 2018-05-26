@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InstaImage = ({ image }) => {
+const InstaImage = ({ image, link }) => {
   const photo = require('../../../images/' + image);
   const instagram = require('../../../images/instagram.png');
   var divStyle = {
@@ -8,9 +8,11 @@ const InstaImage = ({ image }) => {
   };
   return(
     <div className="instaImage">
-      <div style={divStyle} className="centerAlign">
-        <img src={photo} alt="instagram"  />
-      </div>
+      <a href={link}>
+        <div style={divStyle} className="centerAlign">
+          <img src={photo} alt="instagram"  />
+        </div>
+      </a>
     </div>
   )
 }

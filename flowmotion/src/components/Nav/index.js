@@ -31,8 +31,8 @@ export default class Slideshow extends Component {
           <div className={"toggleBar column show" + this.state.checkboxState + " textAlign"}>
             <ul>
               <li><Link onClick={this.uncheck} to="/">HOME</Link></li>
-              <li><Link onClick={this.uncheck} to="/jobs">SUPPORT</Link></li>
-              <li><Link onClick={this.uncheck} to="/notes">COMMUNITY</Link></li>
+              <li><Link onClick={this.uncheck} to="/empty">SUPPORT</Link></li>
+              <li><Link onClick={this.uncheck} to="/empty">COMMUNITY</Link></li>
             </ul>
           </div>
         </nav>
@@ -47,8 +47,8 @@ export default class Slideshow extends Component {
 
             <ul>
               <li><Link to="/">HOME</Link></li>
-              <li><Link to="/jobs">SUPPORT</Link></li>
-              <li><Link to="/notes">COMMUNITY</Link></li>
+              <li><Link to="/">SUPPORT</Link></li>
+              <li><Link to="/">COMMUNITY</Link></li>
             </ul>
           </nav>
         </div>

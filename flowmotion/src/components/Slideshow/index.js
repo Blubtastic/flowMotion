@@ -10,15 +10,15 @@ export default class Slideshow extends Component {
   constructor(props){
     super(props);
     this.state = {
-      images: ['mission.jpg', 'team.jpg', 'product.jpg', 'rooftops.jpg', 'sunset.jpg' ],
+      images: ['teamFun.jpg', 'backpack.jpg', 'team.jpg', 'tech.jpg', 'active.jpg' ],
       indexes: [],
       //Lists must be same length as the images list.
-      names: ["Our bikes", "The Team", "Our Product", "Our Roof", "Our Vacation House"],
-      descriptions: ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi",
-      "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",
-      "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.",
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur"],
+      names: ["We have fun", "We're design driven", "We're a team", "We do it all in-house", "We're more than a team"],
+      descriptions: ["We believe in living life to the fullest. Work is going to fill a large part of our lives, and we want to make it fun.",
+      "We're here to deliver great products and experiences — things people love and need and use — and it all starts with a deep understanding of our users.",
+      "We thrive together and support each other. We believe in creating a collaborative work environment and giving honest and encouraging feedback.",
+      "We take pride in what we make. To ensure a high level of craftsmanship and attention to detail, we design and develop everything in-house.",
+      "We work together and we play together — from hiking to BMXing. We all lead active lifestyles and enjoy spending time outdoors."],
       currentIndex: 1,
       mobile: false,
     }
