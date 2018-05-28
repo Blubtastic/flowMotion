@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 body{
-  font-family: 'type-36', 'Open Sans', sans-serif;
-  font-weight: 600;}
+  font-weight: 400;}
+
 .pageContainer{
   overflow-x: hidden;}
 
 a{
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 150%; }
 
 p{
-  font-weight: 100;
+  font-weight: 300;
   font-size: 130%;}
 
 @media only screen and (max-width: 480px)   {
@@ -28,7 +28,7 @@ ul{
 
 h1{
   font-size: 390%;
-  font-weight: 500;
+  font-weight: 400;
   text-shadow: 0 2px 8px rgb(0,0,0,0.2); }
 @media only screen and (max-width: 480px)   {
   h1{
@@ -41,15 +41,19 @@ h1{
   }
 }
 h2{
+  font-weight: 500;
   font-size: 220%;
-  text-align: center; }
+  text-align: center;
+}
 
 h3{
   font-weight: 600;
   font-size: 140%; }
 
 h4{
-    margin: 10px 0; }
+  font-weight: 600;
+  margin: 10px 0;
+}
 
 
 
@@ -200,6 +204,9 @@ h4{
   align-items: center;
   text-align: center;
 }
+.wideButton{
+  margin-top: 40px;
+}
 @media only screen and (min-width: 481px)   {
   .wideButton div{
     width: 400px;
@@ -296,9 +303,6 @@ h4{
   margin-right: 20px;
   font-size: 70%;
 }
-.positionCard h4{
-
-}
 
 /* ----------------------------------------------------- Instagram*/
 .instaImage{
@@ -338,9 +342,15 @@ h4{
 .benefits img{
   width: 80px;
 }
+.benefits p{
+  font-weight: 400;
+}
 
 /* Make things smaller for mobile */
 @media only screen and (max-width: 700px)   {
+  .benefits{
+    padding-top: 0px;
+  }
   .benefits p{
     font-size: 80%;
   }

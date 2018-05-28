@@ -11,9 +11,11 @@ import TextIcon from '../../Molecules/TextIcon';
 import coffee from '../../../images/icons/coffeeBlack.png';
 import food from '../../../images/icons/foodBlack.png';
 import party from '../../../images/icons/partyBlack.png';
+import rooftop from '../../../images/icons/rooftopBlack.png';
 import money from '../../../images/icons/moneyBlack.png';
 import schedule from '../../../images/icons/scheduleBlack.png';
 import position from '../../../images/icons/positionBlack.png';
+import shares from '../../../images/icons/sharesBlack.png';
 
 import arrow from '../../../images/arrowWhite.png';
 
@@ -128,17 +130,19 @@ export default class VRSupplyChain extends Component{
               <h3>Benefits</h3>
               <p>We are located in a beautiful office in the heart of Oslo. We strive to create a vibrant, collaborative, and exciting workplace for our people to thrive in.</p>
             </div>
-            <div className="benefits wideContainer blackText">
+            <div className="benefits textAlign wideContainer blackText">
 
               <div className="row padding ">
                 <TextIcon image={coffee} word={"Coffee"} />
                 <TextIcon image={food} word={"Lunch"} />
                 <TextIcon image={party} word={"Social events"} />
+                <TextIcon image={rooftop} word={"Roof terrace"} />
               </div>
               <div className="row">
                 <TextIcon image={money} word={"Competitive salary"} />
                 <TextIcon image={schedule} word={"Flexible hours"} />
                 <TextIcon image={position} word={"Convenient location"} />
+                <TextIcon image={shares} word={"Share incentive plan"} />
               </div>
 
             </div>
@@ -150,8 +154,9 @@ export default class VRSupplyChain extends Component{
           </div>
 
           {/* BUTTON apply*/}
-          <div className="horizontalAlign padding wideButton">
-            <Button text={"APPLY"} route={"/"} />
+          <div className="horizontalAlign padding wideButton column verticalAlign">
+          <h3>Application deadline: June 10th, 2018</h3>
+            <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/730148/candidates/new"} />
           </div>
 
 
@@ -166,10 +171,10 @@ export default class VRSupplyChain extends Component{
     return (
       <div className="shaded column jobsCover sidePadding">
         <h1>VP Supply Chain & Logistics</h1>
-        <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management experience.</p>
+        <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? We’re looking for an up-and-coming professional with supply chain and logistics management experience.</p>
         <div className="cornerButton">
           <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
-          <div><Button text={"APPLY"} route={"/"} /></div>
+          <div> <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/730148/candidates/new"} /> </div>
         </div>
       </div>
     )

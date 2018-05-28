@@ -74,6 +74,7 @@ export default class Slideshow extends Component {
 
   updateIndex(newIndex){
     this.setState({ currentIndex: newIndex });
+    this.changeSlide(newIndex)
   }
   //Generates the slideshow images (components)
   generateSlides(){

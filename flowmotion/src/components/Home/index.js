@@ -14,9 +14,12 @@ import VideoPlayer from '../VideoPlayer';
 import coffee from '../../images/icons/coffee.png';
 import food from '../../images/icons/food.png';
 import party from '../../images/icons/party.png';
+import rooftop from '../../images/icons/rooftop.png';
 import money from '../../images/icons/money.png';
 import schedule from '../../images/icons/schedule.png';
 import position from '../../images/icons/position.png';
+import shares from '../../images/icons/shares.png';
+
 
 import playIcon from '../../images/playIcon.png';
 
@@ -47,17 +50,17 @@ export default class Home extends Component {
 
       position1: [
         "VP of Customer Relations & Support",
-        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an experienced professional with empathy for customers and strong ...",
+        "An is looking for an experienced professional with empathy for customers and strong analytical skills.",
         "/vpCustomerRelations"
       ],
       position2: [
         "VP of Supply Chain",
-        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management ...",
+        "An up-and-coming professional with supply chain and logistics management experience.",
         "/vpSupplyChain"
       ],
       position3: [
         "Android Developer",
-        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an excellent Android developer with a passion for new technologies.",
+        "An excellent Android developer with a passion for new technologies.",
         "/androidDeveloper"
       ],
       position4: [
@@ -133,15 +136,17 @@ export default class Home extends Component {
             <TextBlock content={this.state.benefits} />
             <div className="benefits wideContainer ">
 
-              <div className="row">
+              <div className="row topPadding">
                 <TextIcon image={coffee} word={"Unlimited Coffee"}/>
                 <TextIcon image={food} word={"Free lunch"} />
                 <TextIcon image={party} word={"Social events"} />
+                <TextIcon image={rooftop} word={"Roof terrace"} />
               </div>
               <div className="row topPadding">
                 <TextIcon image={money} word={"Competitive salary"} />
                 <TextIcon image={schedule} word={"Flexible hours"} />
                 <TextIcon image={position} word={"Convenient location"} />
+                <TextIcon image={shares} word={"Share incentive plan"} />
               </div>
 
             </div>
