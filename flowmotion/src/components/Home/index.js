@@ -46,19 +46,29 @@ export default class Home extends Component {
       ],
 
       position1: [
-        "VP of Sales",
-        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
-        "jobs"
+        "VP Supply Chain & Logistics",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management ...",
+        "/vpSupplyChain"
       ],
       position2: [
-        "Customer Service Rep",
-        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
-        "/"
+        "VP Customer Relations & Support",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an experienced professional with empathy for customers and strong ...",
+        "/vpCustomerRelations"
       ],
       position3: [
-        "Marketing Manager",
-        "We've come a long way since our first prototype in April 2015. Our community continues to grow and we are looking forward to adventurous and passionate people. ",
-        "/"
+        "Lead Mechanical Engineer",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for a competent mechanical engineer with manufacturing experience.",
+        "/leadMechanicalEngineer"
+      ],
+      position4: [
+        "Customer Consultant / Part-Time",
+        "Want to work for one of Norway's most promising hardware startups? We’re looking for a Customer Consultant who has empathy for customers and is willing to go the ...",
+        "/customerConsultant"
+      ],
+      position5: [
+        "Android Developer (Full-Time/Part-Time)",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an excellent Android developer with a passion for new technologies.",
+        "/androidDeveloper"
       ],
 
       //CoreValueTexts and coreValueTitles must have a length of 4!
@@ -100,7 +110,7 @@ export default class Home extends Component {
 
         {/*
         CORE VALUES SECTION. Uncomment to add.
-        <div className="container black centerAlign textAlign sidePadding">
+        <div className="container black horizontalAlign textAlign sidePadding">
           <CoreValues titles={this.state.coreValueTitles} texts={this.state.coreValueTexts}/>
         </div>
         */}
@@ -138,19 +148,21 @@ export default class Home extends Component {
         </div>
 
         {/* Open Positions section */}
-        <div className="container centerAlign column">
+        <div className="container column">
           <h2>Open Positions</h2>
           <div className="positionCards row wideContainer maxWidth">
             <Position title={this.state.position1[0]} text={this.state.position1[1]} link={this.state.position1[2]} />
             <Position title={this.state.position2[0]} text={this.state.position2[1]} link={this.state.position2[2]} />
             <Position title={this.state.position3[0]} text={this.state.position3[1]} link={this.state.position3[2]} />
+            <Position title={this.state.position4[0]} text={this.state.position4[1]} link={this.state.position4[2]} />
+            <Position title={this.state.position5[0]} text={this.state.position5[1]} link={this.state.position5[2]} />
           </div>
         </div>
 
         {/* Instagram section */}
-        <div className="container centerAlign column">
+        <div className="container column">
           <h2>Latest from our Instagram</h2>
-          <div className="row flexWrap centerAlign smallSidePadding maxWidth">
+          <div className="row flexWrap horizontalAlign smallSidePadding maxWidth">
             <div className="row maxWidth test">
               <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
               <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
@@ -161,8 +173,6 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-
-
 
       </div>
     )

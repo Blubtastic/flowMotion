@@ -7,7 +7,12 @@ import ScrollToTop from './components/ScrollToTop';
 import Nav from './components/Nav'
 
 import Home from './components/Home';
-import Jobs from './components/Jobs';
+
+import vpSupplyChain from './components/Jobs/VPSupplyChain';
+import vpCustomerRelations from './components/Jobs/VPCustomerRelations';
+import leadMechanicalEngineer from './components/Jobs/LeadMechanicalEngineer';
+import customerConsultant from './components/Jobs/CustomerConsultant';
+import androidDeveloper from './components/Jobs/AndroidDeveloper';
 
 import Footer from './components/Footer';
 
@@ -22,7 +27,11 @@ class App extends Component {
             <Nav/>
 
             <Route exact path="/" component={Home} />
-            <Route path="/jobs" component={Jobs} />
+            <Route path="/vpSupplyChain" component={vpSupplyChain} />
+            <Route path="/vpCustomerRelations" component={vpCustomerRelations} />
+            <Route path="/leadMechanicalEngineer" component={leadMechanicalEngineer} />
+            <Route path="/customerConsultant" component={customerConsultant} />
+            <Route path="/androidDeveloper" component={androidDeveloper} />
 
             <Footer/>
           </div>

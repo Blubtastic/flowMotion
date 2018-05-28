@@ -9,7 +9,7 @@ const InstaImage = ({ image, link }) => {
   return(
     <div className="instaImage">
       <a href={link}>
-        <div style={divStyle} className="centerAlign">
+        <div style={divStyle} className="horizontalAlign verticalAlign">
           <img src={photo} alt="instagram"  />
         </div>
       </a>

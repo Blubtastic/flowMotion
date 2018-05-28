@@ -19,7 +19,7 @@ export default class Slideshow extends Component {
       "We thrive together and support each other. We believe in creating a collaborative work environment and giving honest and encouraging feedback.",
       "We take pride in what we make. To ensure a high level of craftsmanship and attention to detail, we design and develop everything in-house.",
       "We work together and we play together — from hiking to BMXing. We all lead active lifestyles and enjoy spending time outdoors."],
-      currentIndex: 1,
+      currentIndex: 0,
       mobile: false,
     }
     //Must bind the function to use state.
@@ -28,11 +28,15 @@ export default class Slideshow extends Component {
     this.updateIndex = this.updateIndex.bind(this);
   }
   componentDidMount(){
-    //Generate indexes for all images.
+    //Generate indexes for all images. This is necessary for the CSS styling (image transition)
     let indexes = [];
     for (let x = 0; x < this.state.images.length; x++){
-      indexes[x] = x;
+      //Increase all indexes by 1 in order to start with the 1st image in center when loading the page.
+      indexes[x] = x+1;
     }
+    //Last index = 0
+    indexes[this.state.images.length-1] = 0
+
     this.setState({ indexes: indexes });
   }
 
@@ -57,7 +61,7 @@ export default class Slideshow extends Component {
           <SimpleSlider images={this.state.images} updateIndex={this.updateIndex} />
         </div>
 
-        <div className="centerAlign desktop">
+        <div className="horizontalAlign desktop">
           {this.generateCircles()}
         </div>
         <div className="textAlign narrowContainer sidePadding">

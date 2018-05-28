@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 body{
   font-family: 'type-36', 'Open Sans', sans-serif;
-  font-weight: 600;
-}
+  font-weight: 600;}
 .pageContainer{
-    overflow-x: hidden;
-}
+  overflow-x: hidden;}
 
 a{
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   font-size: 150%; }
+
 p{
   font-weight: 100;
-  font-size: 130%;
-}
+  font-size: 130%;}
+
 @media only screen and (max-width: 480px)   {
   p{
     font-size: 100%;
@@ -23,17 +22,27 @@ p{
 }
 li{
   list-style-type: none; }
+ul{
+  padding-left: 20px;
+}
 
 h1{
   font-size: 390%;
-  font-weight: 500; }
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgb(0,0,0,0.2); }
 @media only screen and (max-width: 480px)   {
   h1{
     font-size: 200%;
   }
 }
+@media only screen and (max-width: 400px)   {
+  h1{
+    font-size: 190% !important;
+  }
+}
 h2{
-  font-size: 220%; }
+  font-size: 220%;
+  text-align: center; }
 
 h3{
   font-weight: 600;
@@ -43,11 +52,13 @@ h4{
     margin: 10px 0; }
 
 
-/* GENERAL CLASSES */
+
+/* GENERAL/REUSABLE CLASSES */
 .page{
   position: relative;
   z-index: 1;
 }
+/*  ------------------------------------------------------------- Containers */
 .container{
   display: flex;
   width: 100%;
@@ -55,6 +66,24 @@ h4{
   height: 100%;
   padding: 60px 0;
 }
+.wideContainer{
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+}
+.narrowContainer{
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 480px)   {
+  .container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/*  ------------------------------------------------------------- Positioning*/
 .column{
   display: flex;
   flex-direction: column;
@@ -75,20 +104,65 @@ h4{
   align-items: center;
   text-align: center;
 }
-.wideContainer{
-  width: 900px;
-  max-width: 100%;
-  margin: auto;
-}
-.narrowContainer{
-  width: 600px;
-  max-width: 100%;
-  margin: auto;
-}
 .maxWidth{
   max-width: 100% !important;
 }
+.horizontalAlign{
+  display: flex;
+  justify-content: center;
+}
+.verticalAlign{
+  display: flex;
+  align-items: center;
+}
+.textAlign{
+  text-align: center;
+}
+.leftText{
+  text-align: left;
+}
+.alignTop{
+  display: flex;
+  justify-content: flex-start !important;
+}
+/*  ------------------------------------------------------------- Paddings */
+.padding{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.topPadding{
+  padding-top: 25px;
+}
+.smallPadding{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sidePadding{
+  padding-left: 35px;
+  padding-right: 35px;
+  box-sizing: border-box;
+}
+.smallSidePadding{
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
 
+@media only screen and (max-width: 480px)   {
+  .padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .sidePadding{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .flowMotion h1{
+    top: -100px;
+  }
+}
+
+/* Appearance/color ----------------------------------------------------- */
 .white{
   background-color: #fff;
 }
@@ -107,62 +181,13 @@ h4{
 .redText{
   color: #ee1b2c;
 }
-.centerAlign{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.textAlign{
-  text-align: center;
-}
-.leftText{
-  text-align: left;
-}
-.alignTop{
-  display: flex;
-  justify-content: flex-start !important;
-}
-.padding{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.smallPadding{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.sidePadding{
-  padding-left: 35px;
-  padding-right: 35px;
-  box-sizing: border-box;
-}
-.smallSidePadding{
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-.topPadding{
-  padding-top: 25px;
-}
 
 
-/* MOBILE STYLING */
-@media only screen and (max-width: 480px)   {
-  .flowMotion h1{
-    top: -100px;
-  }
-  .padding{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .container{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
+
+/* SPECIFIC ELEMENT CLASSES */
 
 
-/* SPECIFIC CLASSES */
+/* ----------------------------------------------------- Buttons*/
 .button{
   height: 65px;
   width: 280px;
@@ -176,10 +201,6 @@ h4{
   .wideButton div{
     width: 400px;
   }
-}
-.missionText{
-  position: relative;
-  top: -30px;
 }
 .playButton{
   fill-opacity: 0.6;
@@ -196,6 +217,12 @@ h4{
 .playButton + h3{
   margin: 0;
 }
+.missionText{
+  position: relative;
+  top: -30px;
+}
+
+/* ----------------------------------------------------- Core values */
 .coreIcons{
   margin: auto;
   display: flex;
@@ -217,16 +244,16 @@ h4{
     font-size: 125%;
   }
 }
-
 .arrowDown{
   margin: auto;
   width: 30px !important;
 }
+
+/* ----------------------------------------------------- Open positions */
 .positionCards{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* Specific value needed to center cards on smaller screens  */
 @media only screen and (max-width: 916px)   {
   .positionCards{
     justify-content: center !important;
@@ -247,6 +274,7 @@ h4{
   font-size: 70%;
 }
 
+/* ----------------------------------------------------- Instagram*/
 .instaImage{
   padding: 3px 3px;
   width: 270px;
@@ -266,7 +294,7 @@ h4{
   filter: grayscale(100%);
 }
 
-
+/* ----------------------------------------------------- Benefits */
 .benefits div{
   display: flex;
   justify-content: space-between;
@@ -298,15 +326,23 @@ h4{
 }
 
 
-
-/* JOBS PAGE STYLES */
-/* COVER IMAGE */
+/* JOBS PAGES STYLING (same for almost all job pages) */
+/* ----------------------------------------------------- Cover image*/
 .jobsCover h1{
-  top: 120px;
+  top: 90px;
 }
 .jobsCover p{
   position: relative;
-  top: -50px;
+  top: -70px;
+  text-shadow: 0 2px 8px rgb(0,0,0,0.2);
+}
+@media only screen and (max-width: 999px)   {
+  .jobsCover h1{
+    font-size: 250%;
+  }
+  .jobsCover p{
+    font-size: 100%;
+  }
 }
 @media only screen and (min-width: 481px)   {
   .jobsCover div{
@@ -318,6 +354,7 @@ h4{
     top: -100px;
   }
 }
+/* ----------------------------------------------------- Bullet lists*/
 .bulletItems{
   text-align: left;
 }

@@ -4,13 +4,13 @@ import arrow from '../../../images/arrowBlack.png'
 
 const Position = ({ title, text, link }) => {
   return(
-    <Link to={link} className="positionCard centerAlign blackText maxWidth row">
+    <Link to={link} className="positionCard blackText maxWidth row">
       <div className="row">
         <div>
           <h4>{title}</h4>
           <p>{text}</p>
         </div>
-        <div className="centerAlign">
+        <div className="verticalAlign">
           <img src={arrow} alt="arrow"/>
         </div>
       </div>

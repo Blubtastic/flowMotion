@@ -10,7 +10,7 @@ const Cover = ({ content }) => {
   paragraphs.shift();
 
   return(
-      <div>
+      <div className="textAlign">
         <h2>{title}</h2>
         {paragraphs}
       </div>
