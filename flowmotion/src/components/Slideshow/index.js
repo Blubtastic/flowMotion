@@ -15,7 +15,7 @@ export default class Slideshow extends Component {
       //Lists must be same length as the images list.
       names: ["We have fun", "We're design driven", "We're a team", "We do it all in-house", "We're more than a team"],
       descriptions: ["We believe in living life to the fullest. Work is going to fill a large part of our lives, and we want to make it fun.",
-      "We're here to deliver great products and experiences — things people love and need and use — and it all starts with a deep understanding of our users.",
+      "We're here to deliver great products and experiences - things people love and need and use - and it all starts with a deep understanding of our users.",
       "We thrive together and support each other. We believe in creating a collaborative work environment and giving honest and encouraging feedback.",
       "We take pride in what we make. To ensure a high level of craftsmanship and attention to detail, we design and develop everything in-house.",
       "We work together and we play together — from hiking to BMXing. We all lead active lifestyles and enjoy spending time outdoors."],
@@ -61,10 +61,10 @@ export default class Slideshow extends Component {
           <SimpleSlider images={this.state.images} updateIndex={this.updateIndex} />
         </div>
 
-        <div className="horizontalAlign desktop">
+        <div className="horizontalAlign">
           {this.generateCircles()}
         </div>
-        <div className="textAlign narrowContainer sidePadding">
+        <div className="textAlign narrowContainer sidePadding slideshowDescription">
           <h2 className="slideshowHeader">{this.state.names[this.state.currentIndex]}</h2>
           <p>{this.state.descriptions[this.state.currentIndex]}</p>
         </div>

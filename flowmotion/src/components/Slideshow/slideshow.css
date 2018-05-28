@@ -10,7 +10,6 @@
 .slideshowContainer img{
   width: 60px;
 }
-
 .slideContainer {
   position: relative;
   display: flex;
@@ -32,6 +31,15 @@
   width: 20%;
   z-index: 1;
   transition: width 0.5s, height 0.5s, left 0.5s, visibility 0.5s, opacity 0.5s; }
+
+.slideshowDescription{
+  height: 200px;
+}
+@media only screen and (max-width: 480px){
+  .slideshowDescription{
+    height: 150px;
+  }
+}
 
 .image3 {
   position: absolute;
@@ -75,10 +83,6 @@
   fill: #ee1b2c;
   stroke-width: 0; }
 
-
-
-
-/*  */
 
 .slick-slide img{
   width: 100vw;

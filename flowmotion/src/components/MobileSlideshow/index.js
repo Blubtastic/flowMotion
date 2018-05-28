@@ -18,6 +18,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
+      dots: false,
       //Get the index of the current image
       beforeChange: (current, next) => this.setState({ activeSlide: next }),
       afterChange: current => {this.setState({ activeSlide2: current }); this.props.updateIndex(current);}

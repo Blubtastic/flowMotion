@@ -107,7 +107,7 @@ export default class AndroidDeveloper extends Component{
 
         {/* COVER Image section */}
         <div>
-          <Cover image={"androidDeveloper.jpg"} height={"480px"} top={"-540px"}  Component={this.jobsCoverContent()}/>
+          <Cover image={"androidDeveloper.jpg"} height={"480px"} top={"0px"}  Component={this.jobsCoverContent()}/>
         </div>
 
 

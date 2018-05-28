@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom';
 import Cover from '../Cover';
 import CoreValues from '../CoreValues';
 import Slideshow from '../Slideshow';
@@ -9,6 +8,7 @@ import TextBlock from '../Molecules/TextBlock';
 import Position from '../Molecules/Position'
 import InstaImage from '../Molecules/InstaImage'
 import TextIcon from '../Molecules/TextIcon';
+import VideoPlayer from '../VideoPlayer';
 
 //Icons
 import coffee from '../../images/icons/coffee.png';
@@ -46,29 +46,29 @@ export default class Home extends Component {
       ],
 
       position1: [
-        "VP Supply Chain & Logistics",
-        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management ...",
-        "/vpSupplyChain"
-      ],
-      position2: [
-        "VP Customer Relations & Support",
+        "VP of Customer Relations & Support",
         "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an experienced professional with empathy for customers and strong ...",
         "/vpCustomerRelations"
       ],
+      position2: [
+        "VP of Supply Chain",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management ...",
+        "/vpSupplyChain"
+      ],
       position3: [
+        "Android Developer",
+        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an excellent Android developer with a passion for new technologies.",
+        "/androidDeveloper"
+      ],
+      position4: [
         "Lead Mechanical Engineer",
         "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for a competent mechanical engineer with manufacturing experience.",
         "/leadMechanicalEngineer"
       ],
-      position4: [
+      position5: [
         "Customer Consultant / Part-Time",
         "Want to work for one of Norway's most promising hardware startups? We’re looking for a Customer Consultant who has empathy for customers and is willing to go the ...",
         "/customerConsultant"
-      ],
-      position5: [
-        "Android Developer (Full-Time/Part-Time)",
-        "Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an excellent Android developer with a passion for new technologies.",
-        "/androidDeveloper"
       ],
 
       //CoreValueTexts and coreValueTitles must have a length of 4!
@@ -83,7 +83,8 @@ export default class Home extends Component {
         "Flow",
         "Motion",
         "Discipline",
-      ]
+      ],
+      showVideo: false,
     }
   }
 
@@ -130,7 +131,7 @@ export default class Home extends Component {
         <div className="container black grayText">
           <div className="paragraph wideContainer sidePadding ">
             <TextBlock content={this.state.benefits} />
-            <div className="benefits wideContainer topPadding whiteText ">
+            <div className="benefits wideContainer ">
 
               <div className="row">
                 <TextIcon image={coffee} word={"Unlimited Coffee"}/>
@@ -154,8 +155,6 @@ export default class Home extends Component {
             <Position title={this.state.position1[0]} text={this.state.position1[1]} link={this.state.position1[2]} />
             <Position title={this.state.position2[0]} text={this.state.position2[1]} link={this.state.position2[2]} />
             <Position title={this.state.position3[0]} text={this.state.position3[1]} link={this.state.position3[2]} />
-            <Position title={this.state.position4[0]} text={this.state.position4[1]} link={this.state.position4[2]} />
-            <Position title={this.state.position5[0]} text={this.state.position5[1]} link={this.state.position5[2]} />
           </div>
         </div>
 
@@ -193,14 +192,28 @@ export default class Home extends Component {
 
   //Returns the content for the "the mission" cover part.
   missionCoverContent(){
-    return (
-      <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
+    if (!this.state.showVideo){
+      return (
+        <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
         <h2>Our Mission</h2>
         <p className="missionText">Our mission is to help people tell a better story.</p>
-        <Link to="/" className="playButton"><img src={playIcon} alt="play"/></Link>
+        <div className="playButton" onClick={()=>{ this.setState({showVideo: true}) }}><img src={playIcon} alt="play"/></div>
         <h3>PLAY VIDEO</h3>
-      </div>
-    )
+        </div>
+      )
+
+    }
+    else{
+      return (
+        <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
+        <h2>Our Mission</h2>
+        <p className="missionText">Our mission is to help people tell a better story.</p>
+        <div className="youTube">
+          <VideoPlayer/>
+        </div>
+        </div>
+      )
+    }
   }
 
 }

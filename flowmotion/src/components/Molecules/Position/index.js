@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import arrow from '../../../images/arrowBlack.png'
+import arrow from '../../../images/arrowRightRed.png'
 
 const Position = ({ title, text, link }) => {
   return(
