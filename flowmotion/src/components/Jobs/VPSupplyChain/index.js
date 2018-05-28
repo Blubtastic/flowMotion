@@ -151,7 +151,7 @@ export default class VRSupplyChain extends Component{
 
           {/* BUTTON apply*/}
           <div className="horizontalAlign padding wideButton">
-            <Button text={"APPLY"} link={"/"} />
+            <Button text={"APPLY"} route={"/"} />
           </div>
 
 
@@ -169,7 +169,7 @@ export default class VRSupplyChain extends Component{
         <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an up-on-coming professional with supply chain and logistics management experience.</p>
         <div className="cornerButton">
           <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
-          <div><Button text={"APPLY"} link={"/"} /></div>
+          <div><Button text={"APPLY"} route={"/"} /></div>
         </div>
       </div>
     )

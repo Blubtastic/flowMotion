@@ -88,10 +88,10 @@ export default class Slideshow extends Component {
     let children = [];
     for (let x = 0; x < this.state.images.length; x++){
       children.push(
-        <svg height="30" width="30" key={x} >
-          <circle cx="15" cy="15" r="10" fill="none" className={'circle' + this.state.indexes[x]}/>
-          <svg height="30" width="30" >
-            <circle cx="15" cy="15" r="6" fill="none" stroke="#bbb" strokeWidth="2" />
+        <svg height="24" width="24" key={x} >
+          <circle cx="12" cy="12" r="10" fill="none" className={'circle' + this.state.indexes[x]}/>
+          <svg height="24" width="24" >
+            <circle cx="12" cy="12" r="5.5" fill="none" stroke="#777" strokeWidth="1" />
           </svg>
         </svg>
       )

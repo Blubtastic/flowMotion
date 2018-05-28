@@ -148,7 +148,7 @@ export default class Home extends Component {
         </div>
 
         {/* Open Positions section */}
-        <div className="container column">
+        <div className="container column" id="positions">
           <h2>Open Positions</h2>
           <div className="positionCards row wideContainer maxWidth">
             <Position title={this.state.position1[0]} text={this.state.position1[1]} link={this.state.position1[2]} />
@@ -164,12 +164,12 @@ export default class Home extends Component {
           <h2>Latest from our Instagram</h2>
           <div className="row flexWrap horizontalAlign smallSidePadding maxWidth">
             <div className="row maxWidth test">
-              <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
-              <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta1.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta2.jpg"} link={"http://www.google.com"} />
             </div>
             <div className="row maxWidth test">
-              <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
-              <InstaImage image={"insta.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta3.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta4.jpg"} link={"http://www.google.com"} />
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default class Home extends Component {
         <h1 className="smallSidePadding">Join the FlowMotion Community</h1>
         <div className="cornerButton">
           <div></div>
-          <div><Button text={"VIEW JOBS"} link={"/"} /></div>
+          <div><Button text={"VIEW JOBS"} link={"#positions"} /></div>
         </div>
       </div>
     )

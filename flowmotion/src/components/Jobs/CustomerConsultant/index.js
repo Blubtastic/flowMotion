@@ -144,7 +144,7 @@ export default class CustomerConsultant extends Component{
 
           {/* BUTTON apply*/}
           <div className="horizontalAlign padding wideButton">
-            <Button text={"APPLY"} link={"/"} />
+            <Button text={"APPLY"} route={"/"} />
           </div>
 
 
@@ -162,7 +162,7 @@ export default class CustomerConsultant extends Component{
         <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? We’re looking for a Customer Consultant who has empathy for customers and is willing to go the extra mile to keep our customers happy.</p>
         <div className="cornerButton">
           <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
-          <div><Button text={"APPLY"} link={"/"} /></div>
+          <div><Button text={"APPLY"} route={"/"} /></div>
         </div>
       </div>
     )

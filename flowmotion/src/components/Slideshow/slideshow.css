@@ -68,8 +68,8 @@
 
 .circle1{
   stroke: #ee1b2c;
-  stroke-width: 2;
-  stroke: #999; }
+  stroke-width: 1;
+  stroke: #333; }
 
 .circle1 + svg circle{
   fill: #ee1b2c;
