@@ -155,17 +155,16 @@ export default class Home extends Component {
 
         {/* Open Positions section */}
         <div className="container column" id="positions">
-          <h2>Open Positions</h2>
+          <h2 className="sidePadding">Open Positions</h2>
           <div className="positionCards row wideContainer maxWidth">
             <Position title={this.state.position1[0]} text={this.state.position1[1]} link={this.state.position1[2]} />
             <Position title={this.state.position2[0]} text={this.state.position2[1]} link={this.state.position2[2]} />
             <Position title={this.state.position3[0]} text={this.state.position3[1]} link={this.state.position3[2]} />
           </div>
-        </div>
+
 
         {/* Instagram section */}
-        <div className="container column">
-          <h2>Latest from our Instagram</h2>
+          <h2 className="sidePadding">Latest from our Instagram</h2>
           <div className="row flexWrap horizontalAlign smallSidePadding maxWidth">
             <div className="row maxWidth test">
               <InstaImage image={"insta1.jpg"} link={"http://www.google.com"} />

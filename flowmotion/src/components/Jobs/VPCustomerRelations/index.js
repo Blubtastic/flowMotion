@@ -94,7 +94,7 @@ export default class VRCustomerRelations extends Component{
 
         {/* COVER Image section */}
         <div>
-          <Cover image={"VPCustomer.jpg"} height={"480px"} top={"-260px"}  Component={this.jobsCoverContent()}/>
+          <Cover image={"VPCustomer.jpg"} height={"480px"} top={"-258px"}  Component={this.jobsCoverContent()}/>
         </div>
 
 

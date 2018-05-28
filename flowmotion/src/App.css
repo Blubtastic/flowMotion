@@ -115,6 +115,9 @@ h4{
   display: flex;
   justify-content: center;
 }
+.autoMargin{
+  margin: auto;
+}
 .verticalAlign{
   display: flex;
   align-items: center;
@@ -283,6 +286,8 @@ h4{
 .positionCards{
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 900px;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 916px)   {
   .positionCards{
@@ -291,7 +296,7 @@ h4{
 }
 .positionCard{
   display: flex;
-  margin: 7px 20px;
+  margin: 10px 20px;
   padding: 10px 20px;
   box-shadow: 0px 4px 20px #ccc;
   width: 370px;
