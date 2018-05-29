@@ -6,7 +6,7 @@ export default class VideoPlayer extends Component {
     const opts = {
       height: '360',
       width: '640',
-      playerVars: { // https://www.youtube.com/watch?v=KKj6LCEdNBI
+      playerVars: { // https://www.youtube.com/embed/Ba0Rlal7ayI
         autoplay: 1,
         showinfo: 0,
         rel: 0,
@@ -16,7 +16,7 @@ export default class VideoPlayer extends Component {
 
     return (
       <YouTube
-        videoId="KKj6LCEdNBI"
+        videoId="Ba0Rlal7ayI"
         opts={opts}
         onReady={this._onReady}
       />

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Cover from '../../Cover';
 
@@ -183,7 +183,7 @@ export default class AndroidDeveloper extends Component{
           </div>
 
           {/* BUTTON apply*/}
-          <div className="horizontalAlign padding wideButton column verticalAlign">
+          <div className="horizontalAlign wideButton textAlign column sidePadding verticalAlign">
             <h3>Application deadline: June 10th, 2018</h3>
             <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/734229/candidates/new"} />
           </div>
@@ -202,7 +202,7 @@ export default class AndroidDeveloper extends Component{
         <h1>Android Developer</h1>
         <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? FlowMotion is looking for an excellent Android developer with a passion for new technologies.</p>
         <div className="cornerButton">
-          <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
+          <div><img src={arrow} alt="arrow"/><Link to="/#positions">Back to jobs</Link></div>
           <div> <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/734229/candidates/new"} /> </div>
         </div>
       </div>

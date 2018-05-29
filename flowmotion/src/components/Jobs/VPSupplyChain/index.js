@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Cover from '../../Cover';
 
@@ -67,10 +67,6 @@ export default class VRSupplyChain extends Component{
         "A competitive salary",
         "A fun place to work",
         "Social gatherings and activities"
-      ],
-      coffee: [
-        "Let’s have coffee!",
-        "We’d love to discuss the opportunity to join our team, so feel free to reach out to us."
       ],
 
       benefits: [
@@ -148,13 +144,8 @@ export default class VRSupplyChain extends Component{
             </div>
           </div>
 
-          {/* TEXT let's have some coffee section */}
-          <div className="wideContainer sidePadding">
-            <TextBlock content={this.state.coffee} />
-          </div>
-
           {/* BUTTON apply*/}
-          <div className="horizontalAlign padding wideButton column verticalAlign">
+          <div className="horizontalAlign wideButton textAlign column sidePadding verticalAlign">
           <h3>Application deadline: June 10th, 2018</h3>
             <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/730148/candidates/new"} />
           </div>
@@ -173,7 +164,7 @@ export default class VRSupplyChain extends Component{
         <h1>VP Supply Chain & Logistics</h1>
         <p className="whiteText wideContainer textAlign">Want to work for one of Norway's most promising hardware startups? We’re looking for an up-and-coming professional with supply chain and logistics management experience.</p>
         <div className="cornerButton">
-          <div><img src={arrow} alt="arrow"/><Link to="/">Back to jobs</Link></div>
+          <div><img src={arrow} alt="arrow"/><Link to="/#positions">Back to jobs</Link></div>
           <div> <Button text={"APPLY"} link={"https://flowmotion-1.workable.com/jobs/730148/candidates/new"} /> </div>
         </div>
       </div>

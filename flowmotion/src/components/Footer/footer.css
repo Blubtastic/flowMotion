@@ -41,7 +41,7 @@
 .footer div{
   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: center;
+  
 }
 .footer div div a{
   margin: 6px 0;

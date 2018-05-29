@@ -50,7 +50,7 @@ export default class Home extends Component {
 
       position1: [
         "VP of Customer Relations & Support",
-        "An is looking for an experienced professional with empathy for customers and strong analytical skills.",
+        "An experienced professional with empathy for customers and strong analytical skills.",
         "/vpCustomerRelations"
       ],
       position2: [
@@ -167,12 +167,12 @@ export default class Home extends Component {
           <h2 className="sidePadding">Latest from our Instagram</h2>
           <div className="row flexWrap horizontalAlign smallSidePadding maxWidth">
             <div className="row maxWidth test">
-              <InstaImage image={"insta1.jpg"} link={"http://www.google.com"} />
-              <InstaImage image={"insta2.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta1.jpg"} link={"http://www.instagram.com/flowmotion"} />
+              <InstaImage image={"insta2.jpg"} link={"http://www.instagram.com/flowmotion"} />
             </div>
             <div className="row maxWidth test">
-              <InstaImage image={"insta3.jpg"} link={"http://www.google.com"} />
-              <InstaImage image={"insta4.jpg"} link={"http://www.google.com"} />
+              <InstaImage image={"insta3.jpg"} link={"http://www.instagram.com/flowmotion"} />
+              <InstaImage image={"insta4.jpg"} link={"http://www.instagram.com/flowmotion"} />
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default class Home extends Component {
         <h1 className="smallSidePadding">Join the FlowMotion Community</h1>
         <div className="cornerButton">
           <div></div>
-          <div><Button text={"VIEW JOBS"} link={"#positions"} /></div>
+          <div><Button text={"VIEW JOBS"} route={"/#positions"} /></div>
         </div>
       </div>
     )
@@ -199,17 +199,17 @@ export default class Home extends Component {
     if (!this.state.showVideo){
       return (
         <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
-        <h2>Our Mission</h2>
-        <p className="missionText">Our mission is to help people tell a better story.</p>
-        <div className="playButton" onClick={()=>{ this.setState({showVideo: true}) }}><img src={playIcon} alt="play"/></div>
-        <h3>PLAY VIDEO</h3>
+          <h2>Our Mission</h2>
+          <p className="missionText">Our mission is to help people tell a better story.</p>
+          <div className="playButton" onClick={()=>{ this.setState({showVideo: true}) }}><img src={playIcon} alt="play"/></div>
+          <h3>PLAY VIDEO</h3>
         </div>
       )
 
     }
     else{
       return (
-        <div className="shaded dark column grayText alignTop sidePadding padding textAlign">
+        <div className="shaded black column grayText alignTop sidePadding padding textAlign">
         <h2>Our Mission</h2>
         <p className="missionText">Our mission is to help people tell a better story.</p>
         <div className="youTube">

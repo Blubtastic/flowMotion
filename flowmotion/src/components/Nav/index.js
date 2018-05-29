@@ -30,9 +30,8 @@ export default class Slideshow extends Component {
 
           <div className={"toggleBar column show" + this.state.checkboxState + " textAlign"}>
             <ul>
-              <li><Link onClick={this.uncheck} to="/">HOME</Link></li>
-              <li><Link onClick={this.uncheck} to="/empty">SUPPORT</Link></li>
-              <li><Link onClick={this.uncheck} to="/empty">COMMUNITY</Link></li>
+              <li><a onClick={this.uncheck} href="https://flowmotion.co">HOME</a></li>
+              <li><a onClick={this.uncheck} href="https://support.flowmotion.co/hc/en-us">SUPPORT</a></li>
             </ul>
           </div>
         </nav>
@@ -46,9 +45,8 @@ export default class Slideshow extends Component {
             </div>
 
             <ul>
-              <li><Link to="/">HOME</Link></li>
-              <li><Link to="/">SUPPORT</Link></li>
-              <li><Link to="/">COMMUNITY</Link></li>
+              <li><a href="https://flowmotion.co">HOME</a></li>
+              <li><a href="https://support.flowmotion.co/hc/en-us">SUPPORT</a></li>
             </ul>
           </nav>
         </div>

@@ -25,7 +25,14 @@
   align-items: center;
 }
 .dark{
-    background-color: rgba(0,0,0,0.65) !important;
+  background-color: rgba(0,0,0,0.65) !important;
+  -webkit-transition: background-color 1s linear; /* Safari */
+  transition: background-color 1s linear;
+}
+.black{
+  background-color: rgba(0,0,0,0.9) !important;
+  -webkit-transition: background-color 1s linear; /* Safari */
+  transition: background-color 1s linear;
 }
 .shaded h1{
   position: relative;
