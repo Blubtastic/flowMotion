@@ -41,11 +41,12 @@
 .footer div{
   flex-grow: 1;
   flex-wrap: wrap;
-  
+
 }
 .footer div div a{
   margin: 6px 0;
   font-size: 180%;
+  font-weight: 300;
 }
 
 .copyright{

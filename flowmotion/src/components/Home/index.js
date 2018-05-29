@@ -185,7 +185,7 @@ export default class Home extends Component {
   homeCoverContent(){
     return (
       <div className="shaded column flowMotion">
-        <h1 className="smallSidePadding">Join the FlowMotion Community</h1>
+        <h1 className="smallSidePadding">Join the FlowMotion Team</h1>
         <div className="cornerButton">
           <div></div>
           <div><Button text={"VIEW JOBS"} route={"/#positions"} /></div>
