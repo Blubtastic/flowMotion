@@ -20,15 +20,10 @@ export default class Footer extends Component {
               <a href="https://flowmotion.co">Home</a>
               <a href="https://flowmotion.co/pre-order">Shop</a>
               <a href="https://support.flowmotion.co/hc/en-us">Support</a>
-              <div className="column mobileLinks">
-                <Link to="/">App</Link>
-              </div>
             </div>
             <div className="column extraLinks ">
-            <a href="https://flowmotion.co/terms">Terms & Conditions</a>
-            <a href="https://flowmotion.co/terms">Privacy Policy</a>
-
-
+              <a href="https://flowmotion.co/terms">Terms & Conditions</a>
+              <a href="https://flowmotion.co/terms">Privacy Policy</a>
             </div>
 
 
