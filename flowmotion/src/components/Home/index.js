@@ -45,7 +45,7 @@ export default class Home extends Component {
 
       benefits: [
         "Benefits",
-        "We are located in the heart of Oslo, and stribe to create a vibrant, collaborative, and exciting workplace. ",
+        "We are located in the heart of Oslo, and strive to create a vibrant, collaborative, and exciting workplace. ",
       ],
 
       position1: [
