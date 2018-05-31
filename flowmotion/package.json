@@ -2,7 +2,7 @@
   "name": "flowmotion",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Blubtastic.github.io/flowMotion",
+  "homepage": "https://Blubtastic.github.io",
   "dependencies": {
     "anchorate": "^1.2.3",
     "gh-pages": "^1.1.0",
